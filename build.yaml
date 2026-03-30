@@ -1,20 +1,55 @@
-# This file generates the GitHub Actions matrix.
-# For simple board + shield combinations, add them to the top level board and
-# shield arrays, for more control, add individual board + shield combinations
-# to the `include` property. You can also use the `cmake-args` property to
-# pass flags to the build command, `snippet` to add a Zephyr snippet, and
-# `artifact-name` to assign a name to distinguish build outputs from each other:
-#
-# board: [ "nice_nano" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano
-#     shield: reviung41
-#   - board: nice_nano
-#     shield: corne_left
-#     snippet: studio-rpc-usb-uart
-#     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: corne_left_with_studio
-#
 ---
+include:
+  # Colemak-DH
+  - board: nice_nano_v2
+    shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: left_corne_eclipse_colemak_dh.zmk
+  - board: nice_nano_v2
+    shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
+    artifact-name: right_corne_eclipse_colemak_dh.zmk
+
+  # QWERTY
+  - board: nice_nano_v2
+    shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DDEFAULT_TYPING_LAYER=1
+    artifact-name: left_corne_eclipse_qwerty.zmk
+  - board: nice_nano_v2
+    shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
+    cmake-args: -DDEFAULT_TYPING_LAYER=1
+    artifact-name: right_corne_eclipse_qwerty.zmk
+
+  # Dvorak
+  - board: nice_nano_v2
+    shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DDEFAULT_TYPING_LAYER=2
+    artifact-name: left_corne_eclipse_dvorak.zmk
+  - board: nice_nano_v2
+    shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
+    cmake-args: -DDEFAULT_TYPING_LAYER=2
+    artifact-name: right_corne_eclipse_dvorak.zmk
+
+  # Workman
+  - board: nice_nano_v2
+    shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DDEFAULT_TYPING_LAYER=3
+    artifact-name: left_corne_eclipse_workman.zmk
+  - board: nice_nano_v2
+    shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
+    cmake-args: -DDEFAULT_TYPING_LAYER=3
+    artifact-name: right_corne_eclipse_workman.zmk
+
+  # Colemak
+  - board: nice_nano_v2
+    shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DDEFAULT_TYPING_LAYER=4
+    artifact-name: left_corne_eclipse_colemak.zmk
+  - board: nice_nano_v2
+    shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
+    cmake-args: -DDEFAULT_TYPING_LAYER=4
+    artifact-name: right_corne_eclipse_colemak.zmk
