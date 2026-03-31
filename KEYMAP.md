@@ -70,7 +70,7 @@ key on the `SYSTEM LAYER`.
 ## MacOS Specific Notes
 
 <details>
-<summary>Omni-shortcuts for Home/End/Copy/Cut/Paste</summary>
+<summary>Omni-shortcuts for Navigation and Text Editing</summary>
 
 
 Ideally, you'd want to get used to the different keybinds on different operating
@@ -94,7 +94,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 *Note: Make sure that Corne Eclipse has both `Modify events` and `Ignore vendor
 events` toggled on in Karabiner-Elements' Devices tab.*
 
-Remaps `Ctrl` → `Cmd` for common shortcuts so Linux/Windows muscle memory carries over. Terminal apps are excluded to preserve signals like `Ctrl+C`.
+Three rule groups — **Text Navigation**, **Text Editing**, and **App Shortcuts** — remap common shortcuts so Linux/Windows muscle memory carries over on macOS. All rules exclude terminal apps to preserve signals like `Ctrl+C`. Note: `Ctrl+Left/Right` overrides macOS Space switching (previous/next desktop).
 
 | Key | Action |
 |-----|--------|
@@ -103,6 +103,10 @@ Remaps `Ctrl` → `Cmd` for common shortcuts so Linux/Windows muscle memory carr
 | `Shift+Home` / `Shift+End` | Select to line start/end |
 | `Ctrl+Home` / `Ctrl+End` | Beginning/end of document |
 | `Shift+Ctrl+Home` / `Shift+Ctrl+End` | Select to document start/end |
+| `Ctrl+Left` / `Ctrl+Right` | Jump word left / right |
+| `Ctrl+Shift+Left` / `Ctrl+Shift+Right` | Select word left / right |
+| `Ctrl+Backspace` | Delete word backward |
+| `Ctrl+Delete` | Delete word forward |
 | `Ctrl+C` / `X` / `V` | Copy / Cut / Paste |
 | `Ctrl+Z` / `Ctrl+Y` / `Ctrl+Shift+Z` | Undo / Redo |
 | `Ctrl+A` | Select All |
