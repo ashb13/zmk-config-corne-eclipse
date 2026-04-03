@@ -52,7 +52,7 @@
     scroll_horizontal: scroll_horizontal {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+      bindings = <&msc MOVE_X(40)>, <&msc MOVE_X(-40)>;
       tap-ms = <100>;
     };
   };
