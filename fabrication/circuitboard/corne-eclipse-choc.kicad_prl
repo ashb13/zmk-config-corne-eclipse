@@ -35,19 +35,18 @@
       "ratsnest",
       "footprints_front",
       "footprints_back",
-      "footprint_values",
-      "footprint_references",
       "tracks",
       "drc_errors",
       "bitmaps",
       "pads",
       "zones",
       "drc_warnings",
+      "drc_exclusions",
       "locked_item_shadows",
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0fffffff_ffffffff",
+    "visible_layers": "00000000_00000000_0ffe1000_7755555d",
     "zone_display_mode": 0
   },
   "git": {
@@ -57,7 +56,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "corne-eclipse-plates.kicad_prl",
+    "filename": "corne-eclipse-choc.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

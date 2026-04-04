@@ -1,0 +1,85 @@
+(footprint "corne-eclipse:Tenting_Puck"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 7.6835 1.4605 0)
+		(layer "F.Fab")
+		(uuid "bd2a5a79-8547-477b-94a3-881f60e977b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Tenting Puck"
+		(at 8.0645 -2.8575 0)
+		(layer "F.Fab")
+		(uuid "74e9d90e-8f21-43bc-a192-cb918fdee909")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53f55a85-dcb0-43da-8ea1-4437be3f2ba6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "959ba0ff-89a9-42b0-86be-9613bf409e7e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at -19.05 0)
+		(size 2.8 2.8)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cb06a941-d04d-48af-abf7-0c83bc1c634c")
+	)
+	(pad "1" thru_hole circle
+		(at 0 -19.05)
+		(size 2.8 2.8)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "679312b9-2729-4d4d-bcb8-ef2edd0a669d")
+	)
+	(pad "1" thru_hole circle
+		(at 0 19.05)
+		(size 2.8 2.8)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cecab1c4-b5df-4bbe-8847-af42579310b1")
+	)
+	(pad "1" thru_hole circle
+		(at 19.05 0)
+		(size 2.8 2.8)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9372ba58-d0e3-4948-8d4c-cea8b4e00ce0")
+	)
+	(embedded_fonts no)
+	)
