@@ -10,7 +10,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-rgb-smart-idle
+    - name: zmk-ext-power-smart-idle
       remote: frosthaven
       revision: main
   self:
