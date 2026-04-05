@@ -132,7 +132,7 @@ Three rule groups — **Text Navigation**, **Text Editing**, and **App Shortcuts
 <summary>Using the Emoji key</summary>
 
 
-The emoji key on the `MSESYM` layer is a macro that presses the keys necessary
+The emoji key on the `DEVSYM` layer is a macro that presses the keys necessary
 to launch the emoji picker on Windows and on MacOS. For Linux, you may need to
 assign this key to your emoji picker of choice if one is not already assigned
 (I'm a big fan of `smile` under Wayland). When you press the emoji key, it will
