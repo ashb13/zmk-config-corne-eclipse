@@ -4,9 +4,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: frosthaven
+      url-base: https://github.com/Frosthaven
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-rgb-smart-idle
+      remote: frosthaven
+      revision: main
   self:
     path: config
