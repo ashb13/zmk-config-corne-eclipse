@@ -1,4 +1,4 @@
-README | [Keymap](KEYMAP.md) | [Parts](PARTS.md) | [Fabrication](FABRICATION.md) | [Building](BUILDING.md) | [Tricks](TRICKS.md)
+README | [Keymap](KEYMAP.md) | [MX Parts](PARTS_MX.md) | [Building](BUILDING.md) | [Tricks](TRICKS.md)
 
 # Corne Eclipse
 
