@@ -1,3 +1,4 @@
 (fp_lib_table
 	(version 7)
+	(lib (name "Corne Eclipse") (type "KiCad") (uri "${KIPRJMOD}/libs/corne-eclipse.pretty") (options "") (descr ""))
 )
