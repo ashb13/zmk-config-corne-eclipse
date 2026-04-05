@@ -248,7 +248,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "corne-eclipse-universal-plates-mx-or-chocv2-1.5mm.kicad_pro",
+    "filename": "corne-eclipse-plates-chocv1-1.2mm.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -296,8 +296,8 @@
     "legacy_lib_list": [],
     "top_level_sheets": [
       {
-        "filename": "corne-eclipse-universal-plates-mx-or-chocv2-1.5mm.kicad_sch",
-        "name": "corne-eclipse-universal-plates-mx-or-chocv2-1.5mm",
+        "filename": "corne-eclipse-plates-chocv1-1.2mm.kicad_sch",
+        "name": "corne-eclipse-plates-chocv1-1.2mm",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ]
