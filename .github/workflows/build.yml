@@ -89,4 +89,6 @@ jobs:
 
             Each zip contains left and right `.uf2` firmware files. Extract the zip and follow the [flashing guide](https://github.com/${{ github.repository }}/blob/main/FLASHING.md) to install.
 
-            [Click here to view the keymap for this release](https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/images/samurai-legend-utility.png)
+            Keymap Images:
+            - [Typing Layers](https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/images/samurai-legend-typing.png)
+            - [Utility Layers](https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/images/samurai-legend-utility.png)
