@@ -36,16 +36,14 @@
       "footprints_front",
       "footprints_back",
       "footprint_values",
+      "footprint_references",
       "tracks",
-      "drc_errors",
       "bitmaps",
       "pads",
       "zones",
-      "drc_warnings",
-      "drc_exclusions",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0ffe1002_7755555f",
+    "visible_layers": "00000000_00000000_0ffe1000_575555ff",
     "zone_display_mode": 0
   },
   "git": {
@@ -83,7 +81,18 @@
       8,
       9
     ],
-    "col_widths": [],
+    "col_widths": [
+      174,
+      159,
+      118,
+      79,
+      118,
+      118,
+      118,
+      81,
+      118,
+      1140
+    ],
     "custom_group_rules": [],
     "expanded_rows": [],
     "filter_by_net_name": true,
@@ -95,7 +104,7 @@
     "show_unconnected_nets": false,
     "show_zero_pad_nets": false,
     "sort_ascending": true,
-    "sorting_column": -1
+    "sorting_column": 0
   },
   "open_jobsets": [],
   "project": {
