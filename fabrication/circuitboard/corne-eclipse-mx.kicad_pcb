@@ -18376,12 +18376,14 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
+			(net "col3_r")
 			(uuid "2e866cb8-d1a6-4cf6-b202-d4b7ef39f432")
 		)
 		(pad "1" smd rect
 			(at -5.635 -2.54)
 			(size 1.65 2.5)
 			(layers "B.Cu" "B.Mask")
+			(net "col3_r")
 			(uuid "7c2faf81-8838-41c3-b26b-c699337d202c")
 		)
 		(pad "2" smd rect
@@ -22655,14 +22657,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151933")
 		(at 20.1075 39.538211)
-		(property "Reference" "LED26"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE19"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "fc6aee05-6171-458e-9523-2eb89eb30c8b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -23033,14 +23034,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151952")
 		(at 39.1075 39.538211)
-		(property "Reference" "LED25"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE18"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "8100f845-547e-4009-b6ef-b2d7ff92de97")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -23411,14 +23411,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151971")
 		(at 58.1075 34.788211)
-		(property "Reference" "LED19"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE13"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "5d8c9270-aa3f-42e2-9d79-24420efb2299")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -23789,14 +23788,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151990")
 		(at 77.1075 32.413211)
-		(property "Reference" "LED18"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE12"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "37d2af3b-5c66-4484-8384-3385fcd4c074")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -24167,14 +24165,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1519af")
 		(at 96.1075 34.788211)
-		(property "Reference" "LED11"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE05"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "53433807-b1d3-49de-8b29-2b90a9b26a57")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -24545,14 +24542,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1519ce")
 		(at 115.1075 37.163211)
-		(property "Reference" "LED10"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE04"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "1329f945-edd5-487c-9066-bc1616b8e0cb")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -24923,14 +24919,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1519ed")
 		(at 20.1075 58.538211)
-		(property "Reference" "LED27"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE20"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "428cd759-f2b3-4490-ac3c-1180312c64ad")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -25301,14 +25296,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151a0c")
 		(at 39.1075 58.538211)
-		(property "Reference" "LED24"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE17"
+			(at 1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "4b963d95-be2e-48ff-a5e7-6ea13e4e86e1")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -25679,14 +25673,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151a2b")
 		(at 58.1075 53.788211)
-		(property "Reference" "LED20"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE14"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "d59e23b1-3a5a-43a2-b37a-4178b5dfba17")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -26057,14 +26050,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151a4a")
 		(at 77.1075 51.413211)
-		(property "Reference" "LED17"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE11"
+			(at 1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "89ccda3e-590b-4556-aae2-615c1ce2dc2d")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -26435,14 +26427,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151a69")
 		(at 96.1075 53.788211)
-		(property "Reference" "LED12"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE06"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "c714fa12-9261-44f7-8476-7a7422dce727")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -26813,14 +26804,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151a88")
 		(at 115.1075 56.163211)
-		(property "Reference" "LED9"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE03"
+			(at 1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "a65a0c91-4d27-4c62-8c31-e4834d1114cf")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -27191,14 +27181,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151aa7")
 		(at 20.1075 77.538211)
-		(property "Reference" "LED28"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE21"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "0e8280fa-ac5f-46f0-b7e2-a25f95ad6101")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -27568,14 +27557,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151ac6")
 		(at 39.1075 77.538211)
-		(property "Reference" "LED23"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE16"
+			(at 1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "074a073c-46da-4764-af2b-de060d28bbe6")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -27946,14 +27934,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151ae5")
 		(at 58.1075 72.788211)
-		(property "Reference" "LED21"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE15"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "c3307bfb-2575-4bc8-b86b-3db7931c9554")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -28324,14 +28311,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151b04")
 		(at 77.1075 70.413211)
-		(property "Reference" "LED16"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE10"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "9d9d30f5-70e8-4c3a-9f8b-53e190616787")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -28702,14 +28688,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151b42")
 		(at 115.1075 75.163211)
-		(property "Reference" "LED8"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE02"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "edb91be8-e190-428a-9ae4-0005507fa610")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -29080,14 +29065,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151b9f")
 		(at 133.971121 96.538211 60)
-		(property "Reference" "LED7"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE01"
+			(at 0 2.8 60)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "0ec44fbd-e01a-4b8f-b744-86c8dbc649da")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -29460,14 +29444,13 @@
 		(at 39.1075 44.288211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED3"
-			(at -0.01 -0.135 0)
+		(property "Reference" "GLOW03"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "749b293e-5a52-4c4e-ba27-3868ad720718")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -29714,14 +29697,13 @@
 		(at 77.1075 37.163211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED2"
-			(at -0.06 -0.14 0)
+		(property "Reference" "GLOW02"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "a548df47-1585-4dcc-b887-647a0837055a")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -29968,14 +29950,13 @@
 		(at 115.1075 41.913211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED1"
-			(at -0.08 -0.14 0)
+		(property "Reference" "GLOW01"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "a2338bcf-4c72-4b16-a625-f097a49784aa")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30222,14 +30203,13 @@
 		(at 77.1075 75.163211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED5"
-			(at -0.13 -0.02 0)
+		(property "Reference" "GLOW05"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "bb405995-be5b-4e0c-9fe6-afe8ee187dfc")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30476,14 +30456,13 @@
 		(at 115.1075 79.913211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED6"
-			(at -0.05 -0.08 0)
+		(property "Reference" "GLOW06"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "a8637a65-ea8d-4e66-a004-fe99b1c58f3b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30730,14 +30709,13 @@
 		(at 257.6075 44.288211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED31"
-			(at -0.2 -0.01 0)
+		(property "Reference" "GLOW03"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "6f741128-67fe-4dcd-9613-f7a9ef06f74b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30984,14 +30962,13 @@
 		(at 219.6075 37.163211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED30"
-			(at -0.2 -0.01 0)
+		(property "Reference" "GLOW02"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "e8507775-fc1d-4d46-abe7-143219afd057")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -31238,14 +31215,13 @@
 		(at 181.6075 41.913211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED29"
-			(at -0.2 -0.01 0)
+		(property "Reference" "GLOW01"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "2245011d-f622-437b-ae31-f64dd76a5f84")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -31492,14 +31468,13 @@
 		(at 257.6075 63.288211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED32"
-			(at -0.2 -0.01 0)
+		(property "Reference" "GLOW04"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "125ea37b-5a0a-4427-ac5a-9dfb5404fceb")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -31746,14 +31721,13 @@
 		(at 219.6075 75.163211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED33"
-			(at -0.2 -0.01 0)
+		(property "Reference" "GLOW05"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "797a6772-eb10-4a8a-b68c-71c77fef83b8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -32000,14 +31974,13 @@
 		(at 181.6075 79.913211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED33B"
-			(at -0.32 17.6875 0)
+		(property "Reference" "GLOW06"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "bcf1f3be-25e6-4ea3-bc0f-97baf16c55e1")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -32252,14 +32225,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f17156a")
 		(at 219.6075 51.413211)
-		(property "Reference" "LED45"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE11"
+			(at -1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "ef50eaf3-7daa-4c1e-ad59-bd8ea7c20fb0")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -32630,14 +32602,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f171589")
 		(at 200.6075 53.788211)
-		(property "Reference" "LED40"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE06"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "984f0f44-7d1f-4b5b-b0c6-f2542e10386c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -33008,14 +32979,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1715a8")
 		(at 181.6075 56.163211)
-		(property "Reference" "LED37"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE03"
+			(at -1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "1bed1ac5-2869-41fb-8d79-49d100b30661")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -33386,14 +33356,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1715c7")
 		(at 276.6075 77.538211)
-		(property "Reference" "LED56"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE21"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "1cabb6d7-729d-414c-943b-4c5baddc286e")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -33763,14 +33732,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1715e6")
 		(at 257.6075 77.538211)
-		(property "Reference" "LED51"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE16"
+			(at -1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "48a7b748-ef8e-43c7-95f6-eb0dd73a7948")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -34141,14 +34109,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f171605")
 		(at 238.6075 72.788211)
-		(property "Reference" "LED49"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE15"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "220e48f5-5fad-4589-856f-7c81d0bd6ab8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -34519,14 +34486,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f171624")
 		(at 219.6075 70.413211)
-		(property "Reference" "LED44"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE10"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "95278f42-9bc9-4ca0-a24a-10788e01e544")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -34897,14 +34863,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f171643")
 		(at 200.6075 72.788211)
-		(property "Reference" "LED41"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE07"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "85b807a8-eea4-417b-a0e6-b00438aca70a")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -35275,14 +35240,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f171662")
 		(at 181.6075 75.163211)
-		(property "Reference" "LED36"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE02"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "cffd37c2-8c75-4a14-baf6-78eeca25d795")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -35653,14 +35617,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f171681")
 		(at 210.1075 92.413211)
-		(property "Reference" "LED43"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE09"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "b7f16fb6-0a41-42ad-aac2-3940f31a4071")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -36031,14 +35994,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1716a0")
 		(at 190.34389 94.996359 15)
-		(property "Reference" "LED42"
-			(at -0.000001 -2.6 180)
+		(property "Reference" "SHINE08"
+			(at 0 2.8 15)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "9410576d-42bf-4d3c-bdda-a9c60e22fb54")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -39853,14 +39815,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f195858")
 		(at 86.6075 92.413211)
-		(property "Reference" "LED15"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE09"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "e2d14119-293b-46a6-a2ec-c48a72cab68b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -40231,14 +40192,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f195cb4")
 		(at 106.37811 95.001359 -15)
-		(property "Reference" "LED14"
-			(at 0.000001 -2.6 180)
+		(property "Reference" "SHINE08"
+			(at 0 2.8 -15)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "f01181c1-f7c4-4fc9-a04e-9327a7261142")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -40611,14 +40571,13 @@
 		(at 39.1075 63.288211 180)
 		(descr "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf")
 		(tags "LED RGB NeoPixel")
-		(property "Reference" "LED4"
-			(at -0.13 -0.165 0)
+		(property "Reference" "GLOW04"
+			(at 0 0 0)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "a2f95f44-d1a1-4660-83b4-542dedec0053")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -40863,14 +40822,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b296")
 		(at 96.1075 72.788211)
-		(property "Reference" "LED13"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE07"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "c7244d9e-9e1f-4050-bbe2-18d83f244ec7")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -41241,14 +41199,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b2b5")
 		(at 276.6075 39.538211)
-		(property "Reference" "LED54"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE19"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "c080ebda-43dd-4c44-bee8-5f37442b27a5")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -41619,14 +41576,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b2d4")
 		(at 257.6075 39.538211)
-		(property "Reference" "LED53"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE18"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "bb8e13d5-b7ae-4cfe-b9cd-3e63a4d3897a")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -41997,14 +41953,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b2f3")
 		(at 238.6075 34.788211)
-		(property "Reference" "LED47"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE13"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "810530ba-98f8-4215-a229-32d928514f24")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -42375,14 +42330,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b312")
 		(at 219.6075 32.413211)
-		(property "Reference" "LED46"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE12"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "65a18e39-2f59-4acc-a2bd-a4f48cb5f56f")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -42753,14 +42707,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b331")
 		(at 200.6075 34.788211)
-		(property "Reference" "LED39"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE05"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "716c5c75-bf42-4e5f-bbdd-f5c5250a9ccd")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -43131,14 +43084,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b350")
 		(at 181.6075 37.163211)
-		(property "Reference" "LED38"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE04"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "4251a900-b3cb-454e-bba9-e060bd65893c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -43509,14 +43461,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b36f")
 		(at 276.6075 58.538211)
-		(property "Reference" "LED55"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE20"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "afde30ee-28d5-47ef-a5a1-04b6c71ff746")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -43887,14 +43838,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b38e")
 		(at 257.6075 58.538211)
-		(property "Reference" "LED52"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE17"
+			(at -1.8 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "1291e168-4b1b-4aa8-9115-b054df755435")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -44265,14 +44215,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f19b3ad")
 		(at 238.6075 53.788211)
-		(property "Reference" "LED48"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE14"
+			(at 0 2.8 180)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "c436e970-2318-40f8-8681-9e14a157fa40")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -44838,14 +44787,13 @@
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1c7a12")
 		(at 162.750879 96.533211 -60)
-		(property "Reference" "LED35"
-			(at 0 -2.6 180)
+		(property "Reference" "SHINE01"
+			(at 0 2.8 -60)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "2c889784-2a7c-4b59-9d7a-a022cd8cf567")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -45683,10 +45631,10 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "B.Cu")
 		(uuid "08833543-b55f-4f3c-bdd6-9287fb0e9cde")
-		(at 173.1925 61.23 180)
+		(at 173.1925 61.23 90)
 		(descr "AO3401A P-Channel MOSFET - RGB Underglow Power Switch")
 		(tags "SOT-23 MOSFET P-Channel")
-		(property "Reference" "Q2"
+		(property "Reference" "RGBMOS"
 			(at 0 -2.5 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -45777,7 +45725,7 @@
 			(uuid "9943fc67-3fdb-44ec-9fe2-d1b8a6e63c91")
 		)
 		(pad "1" smd roundrect
-			(at 1 0.95 180)
+			(at -1 0.95)
 			(size 1.2 0.6)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -45785,7 +45733,7 @@
 			(uuid "bf002235-5c81-4581-af78-131a79c5d91d")
 		)
 		(pad "2" smd roundrect
-			(at 1 -0.95 180)
+			(at -1 -0.95)
 			(size 1.2 0.6)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -45793,7 +45741,7 @@
 			(uuid "04774dd8-bf4f-4ecc-8f10-7a01e300c22c")
 		)
 		(pad "3" smd roundrect
-			(at -1 0 180)
+			(at 1 0)
 			(size 1.2 0.6)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -45805,7 +45753,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "B.Cu")
 		(uuid "5c464095-b35e-43c7-bbdd-0b157e745ea0")
-		(at 124.3575 64.03)
+		(at 123.6075 64.5)
 		(descr "10k Pull-up Resistor for MOSFET Gate")
 		(tags "resistor 0402")
 		(property "Reference" "R1"
@@ -45919,7 +45867,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "B.Cu")
 		(uuid "5de2a9fc-d9df-4e9a-b8b9-0350d2966559")
-		(at 172.4425 64.03 180)
+		(at 173.1925 64.5 180)
 		(descr "10k Pull-up Resistor for MOSFET Gate")
 		(tags "resistor 0402")
 		(property "Reference" "R2"
@@ -46196,10 +46144,10 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "B.Cu")
 		(uuid "a14bff4d-62c5-4184-a8d4-bf4edb57b2ad")
-		(at 123.6075 61.23)
+		(at 123.6075 61.23 90)
 		(descr "AO3401A P-Channel MOSFET - RGB Underglow Power Switch")
 		(tags "SOT-23 MOSFET P-Channel")
-		(property "Reference" "Q1"
+		(property "Reference" "RGBMOS"
 			(at 0 -2.5 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -56839,4 +56787,214 @@
 		)
 	)
 	(embedded_fonts no)
+	(gr_line
+		(start 121.8575 59.629999999999995)
+		(end 125.3575 59.629999999999995)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "e3ff7fdd-c771-4f57-b617-c9528b6c3f81")
+	)
+	(gr_line
+		(start 125.3575 59.629999999999995)
+		(end 125.3575 62.83)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "ad5c8d18-d0cb-40eb-a873-3cf3c090a66b")
+	)
+	(gr_line
+		(start 125.3575 62.83)
+		(end 121.8575 62.83)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "c8d5c136-5767-4679-b74f-f6290703f980")
+	)
+	(gr_line
+		(start 121.8575 62.83)
+		(end 121.8575 59.629999999999995)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "1c6e23ef-aef8-4dbe-a2c2-ee69e57ba11f")
+	)
+	(gr_line
+		(start 122.6575 63.85)
+		(end 124.5575 63.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "5b71af54-bb2f-4aec-ace2-3e0d643c2d31")
+	)
+	(gr_line
+		(start 124.5575 63.85)
+		(end 124.5575 65.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "cd801525-b41c-4d9e-9fb3-e5fbec9440af")
+	)
+	(gr_line
+		(start 124.5575 65.15)
+		(end 122.6575 65.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "322c98a8-a24e-40fd-8481-792e841d69ff")
+	)
+	(gr_line
+		(start 122.6575 65.15)
+		(end 122.6575 63.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "a99dd5c7-97a3-42c8-8f3f-4050792e0e67")
+	)
+	(gr_line
+		(start 171.4425 59.629999999999995)
+		(end 174.9425 59.629999999999995)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "58e4181e-bf16-48ea-81d1-169254b2065f")
+	)
+	(gr_line
+		(start 174.9425 59.629999999999995)
+		(end 174.9425 62.83)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "84c36f20-ba4e-41ab-be6b-e31dfab241b8")
+	)
+	(gr_line
+		(start 174.9425 62.83)
+		(end 171.4425 62.83)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "721ff4f4-a414-4c34-95d7-c3207b81224f")
+	)
+	(gr_line
+		(start 171.4425 62.83)
+		(end 171.4425 59.629999999999995)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "f7d2d673-e640-49a7-8b96-6751d3aec558")
+	)
+	(gr_line
+		(start 172.2425 63.85)
+		(end 174.14249999999998 63.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "eb2b2fb0-8c31-4bbb-bdbe-4f577d74a9b4")
+	)
+	(gr_line
+		(start 174.14249999999998 63.85)
+		(end 174.14249999999998 65.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "86cb059f-5e1c-4286-8e21-0c341def9a93")
+	)
+	(gr_line
+		(start 174.14249999999998 65.15)
+		(end 172.2425 65.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "a66eea2c-6ac7-42d7-b154-34bb02916334")
+	)
+	(gr_line
+		(start 172.2425 65.15)
+		(end 172.2425 63.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "263a0bef-ec5f-4f7f-99c0-add033be919e")
+	)
+
+	(gr_text "RGB"
+		(at 123.6075 57.68 0)
+		(layer "B.SilkS")
+		(uuid "1ba68409-241f-4f19-9691-a0a9cb3db017")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "MOS"
+		(at 123.6075 58.68 0)
+		(layer "B.SilkS")
+		(uuid "aef08902-5eac-4f20-89f8-a304635d9092")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "RGB"
+		(at 173.1925 57.68 0)
+		(layer "B.SilkS")
+		(uuid "34102d77-ea5b-43c1-a94f-4e8c3d474d51")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "MOS"
+		(at 173.1925 58.68 0)
+		(layer "B.SilkS")
+		(uuid "4d10ce43-39a0-43fc-a5dd-b78c0f2f663e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+
 )
