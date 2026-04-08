@@ -1963,15 +1963,7 @@
 			(remove_unused_layers no)
 			(uuid "e50713b4-064f-4e8f-864a-b3f0dcea4765")
 		)
-		(pad "1" thru_hole circle
-			(at 19.05 0)
-			(size 4.4 4.4)
-			(drill 2.2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "dcd66e40-5d6b-4360-b09c-89ae05647c6e")
-		)
-		(embedded_fonts no)
+				(embedded_fonts no)
 	)
 	(footprint "Panelization:BreakLine_2h_D0.5mm_P0.85mm"
 		(layer "F.Cu")
@@ -4219,15 +4211,7 @@
 			(remove_unused_layers no)
 			(uuid "d9de69d4-8ef9-46c7-a1f8-e7aa0bfb88d3")
 		)
-		(pad "1" thru_hole circle
-			(at 19.05 0)
-			(size 4.4 4.4)
-			(drill 2.2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "ffffe832-d47b-400b-9aae-5f2cbfaace6c")
-		)
-		(embedded_fonts no)
+				(embedded_fonts no)
 	)
 	(gr_poly
 		(pts
