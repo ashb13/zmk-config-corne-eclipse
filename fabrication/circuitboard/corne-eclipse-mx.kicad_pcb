@@ -13931,7 +13931,7 @@
 	(footprint "kbd:M2_HOLE_v2"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1af962")
-		(at 105.5755 40.773711)
+		(at 105.5755 40.023711)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "MH1"
@@ -14435,7 +14435,7 @@
 	(footprint "kbd:M2_HOLE_v2"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1b00ec")
-		(at 191.3135 40.773711 180)
+		(at 191.3135 40.023711 180)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "MH9"
