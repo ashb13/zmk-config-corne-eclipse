@@ -45981,7 +45981,7 @@
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "B.Cu")
 		(uuid "5de2a9fc-d9df-4e9a-b8b9-0350d2966559")
-		(at 173.1925 64.5 180)
+		(at 173.1125 64.5 180)
 		(descr "10k Pull-up Resistor for MOSFET Gate")
 		(tags "resistor 1206")
 		(property "Reference" "R2"

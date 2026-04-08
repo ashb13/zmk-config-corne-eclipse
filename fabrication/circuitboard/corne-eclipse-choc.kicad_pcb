@@ -18572,14 +18572,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f15169f")
-		(at 15.1075 39.005 90)
+		(at 14.3575 39.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D1"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "bc29b1b7-a99d-4ce0-b12a-491545dd9257")
+			(uuid "14507dbb-4a32-4027-ad6e-011eca246e20")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -18592,7 +18592,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c1c61e53-0d76-4fbd-ad08-e488a286936f")
+			(uuid "3a1400df-a421-490a-aced-9db070d278ed")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -18605,7 +18605,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7c9af40c-ee77-499f-b42f-b354e5ad259c")
+			(uuid "a5b8dca1-eff7-427c-9524-e05da6448e3f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18616,7 +18616,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ce61090f-dcb0-4967-8f7e-450e8a50c302")
+			(uuid "66d83773-54f8-4c41-8ec4-4f393479fe6f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18736,14 +18736,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1516ae")
-		(at 34.1075 39.005 90)
+		(at 33.3575 39.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D2"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "151603d9-06da-4145-8e5f-de3a1b3d9757")
+			(uuid "58cee25c-3d64-4979-a86d-8d98134b585f")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -18756,7 +18756,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "78dafbfe-d7c5-4551-bc9b-a58a76ad6a57")
+			(uuid "1f8ff594-02e1-40ee-8170-d8f464af5944")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -18769,7 +18769,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab5879b7-c3df-46d7-a844-d2c320c09034")
+			(uuid "05f02bb6-e691-44a4-8a81-7376f13c39f7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18780,7 +18780,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cfff7db2-5834-4ef3-bd4a-ffc4801850f6")
+			(uuid "3931d5cf-f3b7-4e77-b5c6-0f13740f7f13")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19228,14 +19228,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1516db")
-		(at 91.1075 34.505 90)
+		(at 90.3575 34.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D5"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "67332fbf-ca16-4654-99fb-9d16e582debe")
+			(uuid "58aba98b-e085-4725-ae41-46a8f17ffc67")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19248,7 +19248,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "61390e5c-e202-4678-b39e-03c08961b202")
+			(uuid "9b8acdd2-c702-41d2-b2e6-ec927890b0f0")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19261,7 +19261,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6b292875-99bd-43e3-a826-232f9d3bf106")
+			(uuid "828f045d-4cda-4f36-a852-d8be4626864b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19272,7 +19272,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ecce7eb6-ebce-433d-adf1-03aac7c9920f")
+			(uuid "567073fb-ceb2-40ef-8935-73150a65bf76")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19392,14 +19392,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1516ea")
-		(at 110.1075 36.755 90)
+		(at 109.3575 37.005 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D6"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "56289a07-25da-4378-aeb5-40c35cd3bbb0")
+			(uuid "1d58e636-bb38-432b-ad61-17bb15147207")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19412,7 +19412,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c241f35a-cf1f-4822-b64a-131b9a878c70")
+			(uuid "f35c48a6-eb5e-47a5-a6f0-555df8e82ed5")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19425,7 +19425,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0b2af87c-ec05-4b5a-85e1-22e803b38add")
+			(uuid "f76bcbdf-95a0-46f2-818b-f9ebd241306c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19436,7 +19436,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a794c823-b5ea-47e8-bbbd-9350aef539a4")
+			(uuid "361612ab-68d1-434a-895b-5a37b0287af5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19556,14 +19556,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1516f9")
-		(at 15.1075 58.255 90)
+		(at 14.3575 58.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D7"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "56fb5129-3e3c-4bd1-b794-4523fed90274")
+			(uuid "d357127e-201d-4967-a876-df0dab7ebada")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19576,7 +19576,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0e2e4c51-babe-4e37-b503-2a18aba25100")
+			(uuid "436f55a8-62d1-498b-ad81-1f72d15f1160")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19589,7 +19589,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eb2bbec5-d9f8-4116-a3c1-840fe5f0071b")
+			(uuid "ce062a82-8c8d-40bc-9610-ce6deb73fa9b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19600,7 +19600,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "be59d9cb-75e3-4985-9f45-2c494793fcf8")
+			(uuid "366f2e3a-7df3-4276-8da2-c279fd96d2cf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19720,14 +19720,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151708")
-		(at 34.1075 58.255 90)
+		(at 33.3575 58.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D8"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c7b0f017-0ea1-4a45-95ec-45c6db1b09ea")
+			(uuid "b906e65f-ba0c-4675-9ebf-702dddddd3d4")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19740,7 +19740,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "1e0aef63-7829-4bbf-9c3a-224cd6e62833")
+			(uuid "2e492959-05fc-4609-800c-d9d65606cf1e")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19753,7 +19753,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3680dc12-0920-469a-9274-7c5984c0ced3")
+			(uuid "9dbdd817-eb3a-4e0d-aa48-e223a90ed197")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19764,7 +19764,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f37e2110-c74c-47ae-aaa4-c13ee880ac48")
+			(uuid "f127faa1-6fdf-45d8-ab46-4ab4bed2e1b0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19884,14 +19884,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151717")
-		(at 53.1075 53.505 90)
+		(at 52.3575 53.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D9"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "ef9b9c29-88e8-4b85-bb4d-078f050f6553")
+			(uuid "8969d095-58d1-4206-b24c-d7e50e91f250")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19904,7 +19904,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "475423f9-b4f5-4a2f-80da-0dd3f62f379f")
+			(uuid "1c0f5cb6-c385-4f20-940c-3028b6915730")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -19917,7 +19917,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "527cfe1a-4596-4969-9c3b-37b0904f1b33")
+			(uuid "c44a159e-ae06-474f-baa9-ea6852787488")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19928,7 +19928,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8518726d-c611-4480-b1df-5934a2781cca")
+			(uuid "d2d20e47-21b6-4cf3-a622-146f58c62cbe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20048,14 +20048,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151726")
-		(at 72.1075 51.055 90)
+		(at 71.3575 51.305 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D10"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "eb78bc4a-6d7b-4de0-ad4b-7343c493043f")
+			(uuid "6cfb8f57-80f4-4879-ab6e-90e880d01e03")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20068,7 +20068,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a8ad8cc9-7278-4101-83f1-a5f135475921")
+			(uuid "bd1143d0-ffca-4156-b6db-f5839bd13c2f")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20081,7 +20081,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fdb099b0-3879-4511-acb4-1bdfcd4724ff")
+			(uuid "10c9886c-1012-4f37-a0cb-9588a651a15c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20092,7 +20092,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "36db4734-f55a-4e72-8dd5-aef08af42559")
+			(uuid "5861965c-d0bb-4ded-8167-ebc81a5ca5d4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20212,14 +20212,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151735")
-		(at 91.1075 53.505 90)
+		(at 90.3575 53.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D11"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a4321406-0697-441b-ae81-270e68507606")
+			(uuid "a36d1129-25ff-441a-afd1-1425c830f2ac")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20232,7 +20232,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c494f1ec-7dd8-4be5-9fff-2a5e476ed30c")
+			(uuid "d8c9ec73-bafa-41df-9ce9-4ee098857321")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20245,7 +20245,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9ee071cd-c08d-47f2-8018-f331f049f30e")
+			(uuid "497c6249-204f-4662-ac81-19e4cf1c1e71")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20256,7 +20256,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dbfeb3d0-fa3e-423d-8d96-76611c607de0")
+			(uuid "f1a0d5be-ee58-478c-a3b8-dcd2f09ef047")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20376,14 +20376,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151744")
-		(at 110.1075 55.755 90)
+		(at 109.3575 56.005 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D12"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "173854f6-94db-4867-870b-7baab0abbfb7")
+			(uuid "6890ada2-fe72-4164-bebe-3a98e416f8c5")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20396,7 +20396,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "dadbdecd-76f1-40a3-83b7-ec6866a95f82")
+			(uuid "2ecea8ab-cc17-40d8-8bf2-9909990a937e")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20409,7 +20409,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5bbbd0ca-3e32-4808-8d44-33357a7549af")
+			(uuid "1728d2fe-d618-49c6-aeea-619bb7f49f7d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20420,7 +20420,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "20db69c0-610a-4ba6-b3fb-a7d162a00727")
+			(uuid "8e08baae-fba8-40fb-bd79-61f9102705eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20540,14 +20540,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151753")
-		(at 15.1075 77.255 90)
+		(at 14.3575 77.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D13"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8d8e4932-44a7-4ae2-9128-952184ef869f")
+			(uuid "7c01405e-f510-44a3-ab5f-1db45aeb3ad6")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20560,7 +20560,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "fe54a9aa-3ba2-4a77-a7d1-dfb85acab998")
+			(uuid "7f89fe04-6ac4-4d72-84a3-03ce66e54d1f")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20573,7 +20573,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ca3a6c0b-5c42-4176-b1fb-bf0073ebd9aa")
+			(uuid "7f4e56e8-679b-4cec-8a5f-124b6b9fdfdf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20584,7 +20584,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8cfc527c-e4f7-4c6e-bda1-417c6d3e3aa4")
+			(uuid "cdd5a164-ce73-46da-b265-273d2a55f33e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20704,14 +20704,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151762")
-		(at 34.1075 77.005 90)
+		(at 33.3575 77.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D14"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f95fc774-38b2-4f25-b86f-878834a3bce2")
+			(uuid "963f1c85-dfd7-4fdb-b4d2-038d1447323d")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20724,7 +20724,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "799318ad-8974-49e9-b3f7-af669d756324")
+			(uuid "f4f94805-7bff-431b-b0f9-052065225c18")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20737,7 +20737,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c2c2bda6-380e-4893-affc-eff4377512a6")
+			(uuid "00e50ae4-e2d6-4735-a43d-7c53d08ba5d3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20748,7 +20748,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "62f69d8e-8c82-4032-a03b-a174850e308d")
+			(uuid "02afda6c-152d-4f1a-9935-ae7c6967f470")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20868,14 +20868,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151771")
-		(at 53.1075 72.505 90)
+		(at 52.3575 72.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D15"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "01311066-6ec5-4a2f-9144-b4827e898ad5")
+			(uuid "e242b602-4741-4820-8bab-f04395460aaf")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20888,7 +20888,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "1905c039-12b6-4c06-8b0e-16e82cab40da")
+			(uuid "8d906682-605c-4a8f-b715-3b6ef84da56d")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -20901,7 +20901,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d2ac7a60-c812-4a59-a94a-260c6a87e3fa")
+			(uuid "9f3835d0-5b76-4d23-ad5b-fe9045c9838f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20912,7 +20912,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8d195b8d-309f-4975-a3e0-f228f9b6ef35")
+			(uuid "d8bf1da5-1f88-4aeb-a04c-7adcb5b8180c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21032,14 +21032,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f151780")
-		(at 72.1075 70.005 90)
+		(at 71.3575 70.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D16"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "7a094c6b-e52f-463a-becb-dd2a52df3d49")
+			(uuid "08b0cd44-93d9-41ad-b33e-7d6c474ade93")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21052,7 +21052,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "218ad7d9-42df-4415-8360-1d3ea2c57c90")
+			(uuid "1d7c514e-98e5-4650-82db-f1fd3035b984")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21065,7 +21065,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ef0abde5-26d4-450d-88e1-4edc3ddcf5ee")
+			(uuid "aafaa0d9-00aa-41d5-9666-6e4380a38e4c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21076,7 +21076,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1d0a4363-24ff-413d-bbc4-2bbd1ef4404a")
+			(uuid "d28210aa-3ec3-4dcc-bab2-bb8b29182ed1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21196,14 +21196,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f15178f")
-		(at 91.1075 72.505 90)
+		(at 90.3575 72.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D17"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "58463f9f-40a9-4003-8c5c-75fd3b2d9a97")
+			(uuid "3f522817-1c38-446e-a449-f9b95be2a1dd")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21216,7 +21216,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "610fd2f6-cf16-426a-bd80-e6e210fc1fd5")
+			(uuid "9f47628d-f759-483c-9b69-a3e3d383eab3")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21229,7 +21229,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "27daae4b-c272-47ad-9ac7-a1b26c27c61d")
+			(uuid "1578d845-b305-4610-874f-68873e95fd71")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21240,7 +21240,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d23428df-be02-46c2-9a83-6b3b3881e4a8")
+			(uuid "0e0f9401-b536-4c5f-9717-9a2d0458b599")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21360,14 +21360,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f15179e")
-		(at 110.1075 74.755 90)
+		(at 109.3575 75.005 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D18"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f59c1fcd-1856-4d24-8a09-c6191f4bfd46")
+			(uuid "ad25ad37-09c2-4fa2-902c-c5c9649d3b32")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21380,7 +21380,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "9388b82b-7571-43e6-a9b7-c2b8027721bb")
+			(uuid "3977b897-522c-4961-88ee-1f1cdcb41000")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21393,7 +21393,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c695af9e-cd20-4c55-9fd5-440c0d801f88")
+			(uuid "9534961a-68c6-4790-a0f4-c59f42938394")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21404,7 +21404,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5629f614-c376-4a34-9b4d-4f4860133bab")
+			(uuid "939c37c9-d944-4e19-b33c-c79729e3fa47")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21524,14 +21524,14 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1517ad")
-		(at 81.6075 92.005 90)
+		(at 80.8575 92.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D19"
 			(at 0.5 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "3da392f0-2197-4129-aec1-8bb77f6db094")
+			(uuid "3384f588-917d-412c-a244-d7e4bc84e748")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21544,7 +21544,7 @@
 			(at -0.6 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "04bb6cc7-4e22-4f98-9f5f-684b93a8d2d0")
+			(uuid "e261f971-eccd-43bc-9415-556bb1d05c15")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -21557,7 +21557,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0dad2eb3-bd93-4f85-87a1-b903c7caa816")
+			(uuid "a4ef9a39-74e6-4655-ab6c-25f2d750b379")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21568,7 +21568,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6cc9d849-e5b6-41a8-b63a-f9249bee8261")
+			(uuid "5aff6ed0-e8ce-4320-bc13-c8152a47fcf4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21688,7 +21688,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1517bc")
-		(at 101.566904 93.315482 75)
+		(at 100.816904 93.315482 75)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D20"
@@ -21852,7 +21852,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1517cb")
-		(at 131.070305 100.6425 150)
+		(at 130.570305 101.8925 150)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D21"
@@ -35719,7 +35719,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f184fc0")
-		(at 252.6075 39.005 90)
+		(at 251.8575 39.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D23"
@@ -35883,7 +35883,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f184fed")
-		(at 233.6075 34.305 90)
+		(at 232.8575 34.555 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D24"
@@ -36047,7 +36047,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f18501a")
-		(at 214.6075 32.005 90)
+		(at 213.8575 32.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D25"
@@ -36211,7 +36211,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185074")
-		(at 176.6075 36.805 90)
+		(at 175.8575 37.055 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D27"
@@ -36375,7 +36375,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1850a1")
-		(at 271.6075 58.005 90)
+		(at 270.8575 58.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D28"
@@ -36539,7 +36539,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1850ce")
-		(at 249.8575 56.255 90)
+		(at 249.1075 56.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D29"
@@ -36867,7 +36867,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185128")
-		(at 214.6075 51.005 90)
+		(at 213.8575 51.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D31"
@@ -37031,7 +37031,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185155")
-		(at 195.6075 53.505 90)
+		(at 194.8575 53.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D32"
@@ -37195,7 +37195,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185182")
-		(at 176.6075 55.755 90)
+		(at 175.8575 56.005 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D33"
@@ -37359,7 +37359,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1851af")
-		(at 271.6075 77.005 90)
+		(at 270.8575 77.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D34"
@@ -37523,7 +37523,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1851dc")
-		(at 252.6075 77.005 90)
+		(at 251.8575 77.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D35"
@@ -37687,7 +37687,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185209")
-		(at 233.6075 72.255 90)
+		(at 232.8575 72.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D36"
@@ -37851,7 +37851,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185236")
-		(at 214.6075 70.005 90)
+		(at 213.8575 70.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D37"
@@ -38015,7 +38015,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185263")
-		(at 195.6075 72.505 90)
+		(at 194.8575 72.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D38"
@@ -38179,7 +38179,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185290")
-		(at 176.6075 74.755 90)
+		(at 175.8575 75.005 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D39"
@@ -38343,7 +38343,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1852bd")
-		(at 205.1075 92.005 90)
+		(at 204.3575 92.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D40"
@@ -38507,7 +38507,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1852ea")
-		(at 185.148096 96.065482 105)
+		(at 184.398096 96.315482 105)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D41"
@@ -38671,7 +38671,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185317")
-		(at 160.644695 91.8925 30)
+		(at 159.820305 90.9175 30)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D42"
@@ -38835,7 +38835,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f185344")
-		(at 271.6075 39.255 90)
+		(at 270.8575 39.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D22"
@@ -38999,7 +38999,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f188aa0")
-		(at 195.6075 34.505 90)
+		(at 194.8575 34.755 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D26"
@@ -45828,7 +45828,7 @@
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "B.Cu")
 		(uuid "f6e64a73-69d9-4837-a9b1-7b5a5d4e53e0")
-		(at 173.1525 64.5 180)
+		(at 171.0625 69.05 180)
 		(descr "10k Pull-up Resistor for MOSFET Gate")
 		(tags "resistor 1206")
 		(property "Reference" "R2"
