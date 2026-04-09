@@ -119817,8 +119817,8 @@
 		(layer "User.3")
 		(uuid "b54d6f3b-d6a7-4b89-afc3-df121ee44f43")
 	)
-	(gr_text "Design by Frosthaven\nInspired by foostan's crkbd\nMX Hotswap"
-		(at 119.3575 84.53 0)
+	(gr_text "Design by Frosthaven\nInspired by foostan's crkbd\nMX South Hotswap"
+		(at 121.3575 84.53 0)
 		(layer "B.SilkS")
 		(uuid "4596fe1d-6225-40c4-be9d-83ad33e1eb36")
 		(effects
@@ -119829,8 +119829,8 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "Design by Frosthaven\nInspired by foostan's crkbd\nMX Hotswap"
-		(at 177.3625 84.53 0)
+	(gr_text "Design by Frosthaven\nInspired by foostan's crkbd\nMX South Hotswap"
+		(at 175.3625 84.53 0)
 		(layer "B.SilkS")
 		(uuid "aae7c6d5-1842-409a-aa25-1f2052cc3a88")
 		(effects
