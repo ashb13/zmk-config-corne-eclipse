@@ -478,7 +478,7 @@
 		(uuid "155924f6-57d1-4360-af0f-ba099cd06c90")
 	)
 	(pad "1" smd roundrect
-		(at -7.36 -2.54)
+		(at -7.085 -2.54)
 		(size 2.55 2.5)
 		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.1)
@@ -490,13 +490,7 @@
 		(layers "B.Cu")
 		(uuid "3cfb1a06-368f-474e-9505-7016520ae59b")
 	)
-	(pad "1" smd rect
-		(at -5.635 -2.54)
-		(size 1.65 2.5)
-		(layers "B.Cu" "B.Mask")
-		(uuid "64e38af4-491c-4f35-8903-4dd1c530a151")
-	)
-	(pad "" np_thru_hole circle
+		(pad "" np_thru_hole circle
 		(at -5 -3.75)
 		(size 3.3 3.3)
 		(drill 3)
@@ -537,14 +531,8 @@
 		(roundrect_rratio 0.1)
 		(uuid "beef4545-8877-4cff-9e68-8eb903eb4fc9")
 	)
-	(pad "2" smd rect
-		(at 4.34 -5.08)
-		(size 1.65 2.5)
-		(layers "B.Cu" "B.Mask")
-		(uuid "14e236ed-97cf-4abd-b079-e9a72af6cf59")
-	)
-	(pad "2" smd roundrect
-		(at 6.09 -5.08)
+		(pad "2" smd roundrect
+		(at 5.815 -5.08)
 		(size 2.55 2.5)
 		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.1)

@@ -266,61 +266,53 @@
 			)
 		)
 	)
-	(pad "" np_thru_hole circle
+		(pad "" np_thru_hole circle
 		(at -5.5 0)
 		(size 1.7 1.7)
 		(drill 1.7)
 		(layers "*.Cu" "*.Mask")
-		(uuid "3cdc930b-dfe6-473f-aeaa-8251fa0c82b8")
 	)
-	(pad "" np_thru_hole circle
-		(at 0 0)
-		(size 5 5)
-		(drill 5)
-		(layers "*.Cu" "*.Mask")
-		(uuid "406f773e-c8ef-450a-a415-32b6f1527c23")
-	)
-	(pad "" np_thru_hole circle
-		(at 5.5 0)
-		(size 1.7 1.7)
-		(drill 1.7)
-		(layers "*.Cu" "*.Mask")
-		(uuid "94814936-113c-4716-8da9-1eb049f61f4c")
-	)
-	(pad "1" smd roundrect
-		(at -7.15 -3.75)
-		(size 2.0 1.5)
-		(layers "B.Cu" "B.Mask" "B.Paste")
-		(roundrect_rratio 0.1)
-		(uuid "155924f6-57d1-4360-af0f-ba099cd06c90")
-	)
-	(pad "" np_thru_hole circle
+		(pad "" np_thru_hole circle
 		(at -5 -3.75)
 		(size 3.3 3.3)
 		(drill 3)
 		(layers "*.Cu" "*.Mask")
-		(uuid "ed291eb3-0e52-4bc9-9eb3-6749e8a6224d")
 	)
-	(pad "" np_thru_hole circle
+		(pad "" np_thru_hole circle
 		(at 0 -5.95)
 		(size 3.3 3.3)
 		(drill 3)
 		(layers "*.Cu" "*.Mask")
-		(uuid "a221d6ba-7c90-4997-992b-195b44d0ff91")
 	)
-	(pad "2" smd roundrect
-		(at 2.15 -5.95)
-		(size 2.0 1.5)
-		(layers "B.Cu" "B.Mask" "B.Paste")
-		(roundrect_rratio 0.1)
-		(uuid "beef4545-8877-4cff-9e68-8eb903eb4fc9")
+		(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 5 5)
+		(drill 5)
+		(layers "*.Cu" "*.Mask")
 	)
-	(pad "" np_thru_hole circle
+		(pad "" np_thru_hole circle
 		(at 5 5.15)
 		(size 1.6 1.6)
 		(drill 1.6)
 		(layers "*.Cu" "*.Mask")
-		(uuid "e298bc0d-f24d-4deb-9cde-b15e3db7264a")
+	)
+		(pad "" np_thru_hole circle
+		(at 5.5 0)
+		(size 1.7 1.7)
+		(drill 1.7)
+		(layers "*.Cu" "*.Mask")
+	)
+		(pad "1" smd roundrect
+		(at -7.4 -3.75)
+		(size 2.5 1.85)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.1)
+	)
+		(pad "2" smd roundrect
+		(at 2.4 -5.95)
+		(size 2.5 1.85)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.1)
 	)
 	(embedded_fonts no)
 )
