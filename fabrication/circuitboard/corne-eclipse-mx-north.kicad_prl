@@ -50,7 +50,7 @@
       "shapes",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffff575_775555d5",
+    "visible_layers": "ffffffff_ffffffff_fffff577_775555d5",
     "zone_display_mode": 1
   },
   "git": {
@@ -60,7 +60,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "corne-eclipse-mx.kicad_prl",
+    "filename": "corne-eclipse-mx-north.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
