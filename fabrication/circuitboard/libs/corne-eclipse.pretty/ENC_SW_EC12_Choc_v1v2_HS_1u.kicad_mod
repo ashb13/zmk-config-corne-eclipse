@@ -336,8 +336,8 @@
 	)
 		(pad "" np_thru_hole circle
 		(at -5.5 0)
-		(size 1.7 1.7)
-		(drill 1.7)
+		(size 1.9 1.9)
+		(drill 1.9)
 		(layers "*.Cu" "*.Mask")
 		(clearance 0)
 	)
@@ -357,8 +357,8 @@
 	)
 		(pad "" np_thru_hole circle
 		(at 0 0)
-		(size 5 5)
-		(drill 5)
+		(size 3.4 3.4)
+		(drill 3.4)
 		(layers "*.Cu" "*.Mask")
 		(clearance 0)
 	)
@@ -371,8 +371,8 @@
 	)
 		(pad "" np_thru_hole circle
 		(at 5.5 0)
-		(size 1.7 1.7)
-		(drill 1.7)
+		(size 1.9 1.9)
+		(drill 1.9)
 		(layers "*.Cu" "*.Mask")
 		(clearance 0)
 	)
