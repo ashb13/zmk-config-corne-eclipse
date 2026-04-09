@@ -21733,11 +21733,11 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1517cb")
-		(at 135.8575 91.53 -30)
+		(at 136.320305 91.8925 150)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D21"
-			(at 0.5 0 150)
+			(at 0.500001 -0.000001 150)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "9e320e96-4eb3-4bea-8f0d-e653d57432a7")
@@ -21788,64 +21788,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -2.7 0.75)
-			(end -2.7 -0.75)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "73af9345-06bc-4439-b703-caad736c5503")
-		)
-		(fp_line
-			(start -2.7 -0.75)
+			(start 2.7 0.75)
 			(end 2.7 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "734bc4c0-ce46-41d9-a31f-244e91442859")
-		)
-		(fp_line
-			(start -0.5 0.5)
-			(end -0.5 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "37355a3d-ba85-4129-87fc-74ee23cf026e")
-		)
-		(fp_line
-			(start -0.4 0)
-			(end 0.5 0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "098c44be-89d8-4562-832e-1da900f8cb40")
-		)
-		(fp_line
-			(start 0.5 0.5)
-			(end 0.5 -0.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "611fa9b0-c50d-471e-9452-0477da24e7ec")
-		)
-		(fp_line
-			(start 0.5 -0.5)
-			(end -0.4 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "59fe8949-fae8-4c23-bd68-5a4674c63fc8")
+			(uuid "00384828-686e-4cbd-9de1-6bae59a677c8")
 		)
 		(fp_line
 			(start 2.7 0.75)
@@ -21858,24 +21808,74 @@
 			(uuid "57514907-6f9c-4050-89c7-473cdccf7b7a")
 		)
 		(fp_line
-			(start 2.7 0.75)
+			(start 0.499999 -0.5)
+			(end -0.4 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "59fe8949-fae8-4c23-bd68-5a4674c63fc8")
+		)
+		(fp_line
+			(start 0.5 0.499999)
+			(end 0.499999 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "611fa9b0-c50d-471e-9452-0477da24e7ec")
+		)
+		(fp_line
+			(start -0.4 0)
+			(end 0.5 0.499999)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "098c44be-89d8-4562-832e-1da900f8cb40")
+		)
+		(fp_line
+			(start -0.499999 0.5)
+			(end -0.5 -0.499999)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "37355a3d-ba85-4129-87fc-74ee23cf026e")
+		)
+		(fp_line
+			(start -2.7 -0.75)
 			(end 2.7 -0.75)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "00384828-686e-4cbd-9de1-6bae59a677c8")
+			(uuid "734bc4c0-ce46-41d9-a31f-244e91442859")
+		)
+		(fp_line
+			(start -2.7 0.75)
+			(end -2.7 -0.75)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "73af9345-06bc-4439-b703-caad736c5503")
 		)
 		(pad "1" smd rect
-			(at -1.775 0 330)
+			(at -1.775 0 150)
 			(size 1.4 1)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "row3")
 			(uuid "a40dc57c-84f1-4760-b2e7-76917bb2883b")
 		)
 		(pad "2" smd rect
-			(at 1.775 0 330)
+			(at 1.775 0 150)
 			(size 1.4 1)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(D22-Pad2)")
@@ -38388,7 +38388,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "00000000-0000-0000-0000-00005f1852ea")
-		(at 161.1075 91.78 30)
+		(at 160.6075 91.78 30)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D41"
@@ -44864,7 +44864,7 @@
 		(descr "AO3401A P-Channel MOSFET - RGB Underglow Power Switch")
 		(tags "SOT-23 MOSFET P-Channel")
 		(property "Reference" "RGBMOS"
-			(at 0 -2.5 90)
+			(at 0 -2.5 0)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "5d231f1a-5673-4bed-9d6f-db8459b99c49")
@@ -44877,7 +44877,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 0 2.5 90)
+			(at 0 2.5 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "f9e0f18e-bc05-4e14-a03e-699edcc68c20")
@@ -44890,7 +44890,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "f691824d-0cf1-468f-89af-32bcb751703b")
@@ -44901,7 +44901,7 @@
 			)
 		)
 		(property "Description" "AO3401A P-Ch MOSFET 30V 4A SOT-23-3 - LED power switch"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "c1cd0e8c-c736-49e5-84c7-53b0f4d18b95")
@@ -44994,7 +44994,7 @@
 			(uuid "98790a3b-fa96-4a53-93f8-ff651360ba3a")
 		)
 		(fp_text user "RGB"
-			(at 3.55 0 90)
+			(at 3.55 0 0)
 			(layer "B.SilkS")
 			(uuid "fa87dee6-3c5e-4a5e-9616-e5610ccf40fa")
 			(effects
@@ -45006,7 +45006,7 @@
 			)
 		)
 		(fp_text user "MOS"
-			(at 2.55 0 90)
+			(at 2.55 0 0)
 			(layer "B.SilkS")
 			(uuid "280f453b-c4e5-459f-aab4-8ac6bfac796f")
 			(effects
@@ -45354,7 +45354,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "786cb816-d098-49c3-9026-b2d3fd392b7b")
-		(at 218.6075 89.53 90)
+		(at 239.3575 85.28 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D40B"
@@ -45521,7 +45521,7 @@
 		(descr "AO3401A P-Channel MOSFET - RGB Underglow Power Switch")
 		(tags "SOT-23 MOSFET P-Channel")
 		(property "Reference" "RGBMOS"
-			(at 0 -2.5 90)
+			(at 0 -2.5 0)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "23ee12fe-1962-4254-b64a-7f2b1a242147")
@@ -45534,7 +45534,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 0 2.5 90)
+			(at 0 2.5 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "4441a0e5-f052-471a-853d-1498a27ab3b2")
@@ -45547,7 +45547,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "e4443e58-666c-44fc-949a-80e4d8ae128e")
@@ -45558,7 +45558,7 @@
 			)
 		)
 		(property "Description" "AO3401A P-Ch MOSFET 30V 4A SOT-23-3 - LED power switch"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "8cd36f7c-7297-444b-b17b-7fbcf19da82a")
@@ -45651,7 +45651,7 @@
 			(uuid "d6856cbf-a195-453c-876e-8f1f23b169d5")
 		)
 		(fp_text user "RGB"
-			(at 3.55 0 90)
+			(at 3.55 0 0)
 			(layer "B.SilkS")
 			(uuid "6966f617-0fcd-4a1f-b76b-e7af443e6003")
 			(effects
@@ -45663,7 +45663,7 @@
 			)
 		)
 		(fp_text user "MOS"
-			(at 2.55 0 90)
+			(at 2.55 0 0)
 			(layer "B.SilkS")
 			(uuid "f08fa77b-ba28-40eb-9295-c3e98be751d5")
 			(effects
@@ -45703,7 +45703,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "d2b8f280-8aba-43fa-990c-4fac932a1b32")
-		(at 78.3575 90.005 90)
+		(at 57.3575 85.03 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D19B"

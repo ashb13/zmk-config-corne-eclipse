@@ -45151,7 +45151,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "786cb816-d098-49c3-9026-b2d3fd392b7b")
-		(at 236.6075 80.555 90)
+		(at 239.1075 85.255 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D40B"
@@ -45652,7 +45652,7 @@
 	(footprint "kbd:D3_SMD_v2"
 		(layer "B.Cu")
 		(uuid "d2b8f280-8aba-43fa-990c-4fac932a1b32")
-		(at 56.8575 87.505 90)
+		(at 57.1075 85.505 90)
 		(descr "Resitance 3 pas")
 		(tags "R")
 		(property "Reference" "D19B"

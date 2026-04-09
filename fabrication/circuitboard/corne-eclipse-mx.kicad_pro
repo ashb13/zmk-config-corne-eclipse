@@ -285,7 +285,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/home/frosthaven/Downloads/gerber/testmx/",
       "specctra_dsn": "../../../../../../../home/frosthaven/Downloads/dsn/corne-eclipse-mx.dsn",
       "vrml": ""
     },
