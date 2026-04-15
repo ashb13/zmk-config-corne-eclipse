@@ -1,0 +1,285 @@
+(footprint "SOT-23-reversible"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Reversible SOT-23 MOSFET, bridged pads on both sides with X-mirror")
+	(tags "SOT-23 MOSFET reversible")
+	(property "Reference" "RGBMOS"
+		(at 0 2.4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9e3b84a1-29cf-4c9f-943c-2bc571d4fbed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "AO3401A"
+		(at 0 -2.4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "307adaec-b036-43d4-b56d-8f52d8561cbf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9fc55fac-3ccb-4efc-8967-dbc71f800160")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "352b5ecb-a5ed-4106-9da0-48cf8e694714")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -1.675 -1.25) (xy -0.2 -1.25) (xy -0.2 -0.65) (xy -1.675 -0.65)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "83b09006-7e7b-4258-a237-7fdf0a41b2ac")
+	)
+	(fp_poly
+		(pts
+			(xy -1.675 0.65) (xy -0.2 0.65) (xy -0.2 1.25) (xy -1.675 1.25)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "40039e9b-0356-4ef3-a536-a15d634733fd")
+	)
+	(fp_poly
+		(pts
+			(xy 0.2 -0.3) (xy 1.675 -0.3) (xy 1.675 0.3) (xy 0.2 0.3)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "61841177-33c7-47a4-8d7d-7674117c09e6")
+	)
+	(fp_poly
+		(pts
+			(xy -1.675 -0.3) (xy -0.2 -0.3) (xy -0.2 0.3) (xy -1.675 0.3)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Mask")
+		(uuid "9d8efb0f-838e-4750-ae45-a09346d23990")
+	)
+	(fp_poly
+		(pts
+			(xy 0.2 -1.25) (xy 1.675 -1.25) (xy 1.675 -0.65) (xy 0.2 -0.65)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Mask")
+		(uuid "22f97e5d-624d-40df-92a0-f7057ce69c3f")
+	)
+	(fp_poly
+		(pts
+			(xy 0.2 0.65) (xy 1.675 0.65) (xy 1.675 1.25) (xy 0.2 1.25)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Mask")
+		(uuid "1acbe7ed-d218-4897-80a1-13f3217a1744")
+	)
+	(fp_poly
+		(pts
+			(xy -0.661445 0) (xy -0.991445 0.24) (xy -0.991445 -0.24)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "679c86e7-8120-4bd6-b872-d6720646116a")
+	)
+	(fp_poly
+		(pts
+			(xy 0.621528 0) (xy 0.951528 0.24) (xy 0.951528 -0.24)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.SilkS")
+		(uuid "d8a08a00-3426-4a8c-a9fc-975d7137e6b0")
+	)
+	(pad "1" smd custom
+		(at -0.9375 0.95)
+		(size 1.475 0.6)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start 0.7375 0)
+				(end 0.9375 0)
+				(width 0.2)
+			)
+		)
+		(uuid "c36a8367-1bd5-4654-9afd-bea7f1ad1b5e")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0.95)
+		(size 0.565 0.565)
+		(drill 0.3048)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "91b76aee-cc7a-4562-ae58-7ca31661bb50")
+	)
+	(pad "1" smd custom
+		(at 0.9375 0.95)
+		(size 1.475 0.6)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start -0.7375 0)
+				(end -0.9375 0)
+				(width 0.2)
+			)
+		)
+		(uuid "7a99d348-d869-49ee-ab61-2b77ca0c4275")
+	)
+	(pad "2" smd custom
+		(at -0.9375 -0.95)
+		(size 1.475 0.6)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start 0.7375 0)
+				(end 0.9375 0)
+				(width 0.2)
+			)
+		)
+		(uuid "3d53fbda-0b2c-4de2-8a51-845c2c1c1b96")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -0.95)
+		(size 0.565 0.565)
+		(drill 0.3048)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "38fc1b9f-4763-412f-a031-43f5172f2f68")
+	)
+	(pad "2" smd custom
+		(at 0.9375 -0.95)
+		(size 1.475 0.6)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start -0.7375 0)
+				(end -0.9375 0)
+				(width 0.2)
+			)
+		)
+		(uuid "4ca8d11a-566e-4500-b242-1c08d3e755f6")
+	)
+	(pad "3" smd custom
+		(at -0.9375 0)
+		(size 1.475 0.6)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start 0.7375 0)
+				(end 0.9375 0)
+				(width 0.2)
+			)
+		)
+		(uuid "df7ba553-4583-4e58-a15f-a8f334d3e878")
+	)
+	(pad "3" thru_hole circle
+		(at 0 0)
+		(size 0.565 0.565)
+		(drill 0.3048)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "51dbd7a7-7721-46b7-8d89-a1b8e1199dd6")
+	)
+	(pad "3" smd custom
+		(at 0.9375 0)
+		(size 1.475 0.6)
+		(layers "F.Cu")
+		(zone_connect 2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start -0.7375 0)
+				(end -0.9375 0)
+				(width 0.2)
+			)
+		)
+		(uuid "9686614b-d286-4724-a158-b9dc19eb8328")
+	)
+	(embedded_fonts no)
+)
