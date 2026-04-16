@@ -314,7 +314,7 @@
 		(uuid "98fbd832-4411-4e0f-a639-561922c505f1")
 	)
 	(pad "3" thru_hole circle
-		(at 0 1.3 180)
+		(at 0 1.15 180)
 		(size 0.6 0.6)
 		(drill 0.3048)
 		(layers "*.Cu")
@@ -362,7 +362,7 @@
 		(uuid "df050f48-5d2e-40bd-ad84-9959dbc6148a")
 	)
 	(pad "4" thru_hole circle
-		(at 0 -1.3 180)
+		(at 0 -1.15 180)
 		(size 0.6 0.6)
 		(drill 0.3048)
 		(layers "*.Cu")
