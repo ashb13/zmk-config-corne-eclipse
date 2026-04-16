@@ -281,5 +281,28 @@
 		)
 		(uuid "9686614b-d286-4724-a158-b9dc19eb8328")
 	)
+	(fp_text user "RGB"
+		(at 0 -1.8 0)
+		(layer "F.SilkS")
+		(uuid "ab19a000-0000-0000-0000-000000000001")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "RGB"
+		(at 0 -1.8 0)
+		(layer "B.SilkS")
+		(uuid "ab19a000-0000-0000-0000-000000000002")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify mirror)
+		)
+	)
 	(embedded_fonts no)
 )
