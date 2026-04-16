@@ -51,7 +51,7 @@
 			(gr_line (start 0.9525 0) (end 1.24 0) (width 0.2))
 		)
 	)
-	(pad "1" thru_hole circle (at -1.3 0) (size 0.565 0.565) (drill 0.3048) (layers "F.Cu" "B.Cu") (uuid "c5c2ddba-9441-4611-9682-a278675971c5"))
+	(pad "1" thru_hole circle (at -1.3 0) (size 0.6 0.6) (drill 0.3048) (layers "F.Cu" "B.Cu") (uuid "c5c2ddba-9441-4611-9682-a278675971c5"))
 	(pad "2" smd custom
 		(at 2.54 0)
 		(size 1.905 1.905)
@@ -74,6 +74,6 @@
 			(gr_line (start -0.9525 0) (end -1.24 0) (width 0.2))
 		)
 	)
-	(pad "2" thru_hole circle (at 1.3 0) (size 0.565 0.565) (drill 0.3048) (layers "F.Cu" "B.Cu") (uuid "beb9660a-822f-49d7-a7c5-40cdc6836094"))
+	(pad "2" thru_hole circle (at 1.3 0) (size 0.6 0.6) (drill 0.3048) (layers "F.Cu" "B.Cu") (uuid "beb9660a-822f-49d7-a7c5-40cdc6836094"))
 	(embedded_fonts no)
 )
