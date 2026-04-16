@@ -227,13 +227,13 @@
 	(pad "1" smd circle
 		(at -13.97 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "d4878d2c-c0d8-476c-84ff-159bcb735262")
 	)
 	(pad "1" smd custom
 		(at -13.97 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -290,7 +290,7 @@
 	(pad "1" smd custom
 		(at -13.97 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -307,7 +307,7 @@
 	(pad "1" smd custom
 		(at -13.97 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -334,7 +334,7 @@
 	(pad "1" smd custom
 		(at -13.97 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -383,19 +383,19 @@
 	(pad "1" smd circle
 		(at -13.97 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "bdfe844b-b009-4b7f-b2c0-46d195cd2b9f")
 	)
 	(pad "2" smd circle
 		(at -11.43 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "fd341742-8d65-4572-b018-ff8b21400045")
 	)
 	(pad "2" smd custom
 		(at -11.43 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -452,7 +452,7 @@
 	(pad "2" smd custom
 		(at -11.43 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -469,7 +469,7 @@
 	(pad "2" smd custom
 		(at -11.43 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -496,7 +496,7 @@
 	(pad "2" smd custom
 		(at -11.43 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -545,19 +545,19 @@
 	(pad "2" smd circle
 		(at -11.43 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "b0b67082-7927-44b6-94eb-1908d7394edd")
 	)
 	(pad "3" smd circle
 		(at -8.89 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "cb3de788-f9b1-4d5a-9f5f-d54a28605dd1")
 	)
 	(pad "3" smd custom
 		(at -8.89 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -614,7 +614,7 @@
 	(pad "3" smd custom
 		(at -8.89 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -631,7 +631,7 @@
 	(pad "3" smd custom
 		(at -8.89 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -658,7 +658,7 @@
 	(pad "3" smd custom
 		(at -8.89 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -707,19 +707,19 @@
 	(pad "3" smd circle
 		(at -8.89 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "b5aea965-5e3b-4101-8dfb-a89eef44d260")
 	)
 	(pad "4" smd circle
 		(at -6.35 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "96325428-f26b-49d7-b218-e72c8a601574")
 	)
 	(pad "4" smd custom
 		(at -6.35 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -776,7 +776,7 @@
 	(pad "4" smd custom
 		(at -6.35 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -793,7 +793,7 @@
 	(pad "4" smd custom
 		(at -6.35 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -820,7 +820,7 @@
 	(pad "4" smd custom
 		(at -6.35 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -869,19 +869,19 @@
 	(pad "4" smd circle
 		(at -6.35 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "4285f8de-6151-49c9-8af3-1acb66e4904d")
 	)
 	(pad "5" smd circle
 		(at -3.81 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "70038b3f-a02a-427c-9bcb-d25e21cfea42")
 	)
 	(pad "5" smd custom
 		(at -3.81 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -938,7 +938,7 @@
 	(pad "5" smd custom
 		(at -3.81 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -955,7 +955,7 @@
 	(pad "5" smd custom
 		(at -3.81 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -982,7 +982,7 @@
 	(pad "5" smd custom
 		(at -3.81 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1031,19 +1031,19 @@
 	(pad "5" smd circle
 		(at -3.81 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "a87e1b83-a5a6-4b17-9fe3-eff195632ddc")
 	)
 	(pad "6" smd circle
 		(at -1.27 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "083faf99-18f8-4ca1-acc5-6b354e205c2c")
 	)
 	(pad "6" smd custom
 		(at -1.27 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1100,7 +1100,7 @@
 	(pad "6" smd custom
 		(at -1.27 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1117,7 +1117,7 @@
 	(pad "6" smd custom
 		(at -1.27 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1144,7 +1144,7 @@
 	(pad "6" smd custom
 		(at -1.27 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1193,19 +1193,19 @@
 	(pad "6" smd circle
 		(at -1.27 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "36f39c13-d6b7-4203-82cf-402d1bb08706")
 	)
 	(pad "7" smd circle
 		(at 1.27 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "eca47030-36de-4f0e-95cd-5ee2b31674af")
 	)
 	(pad "7" smd custom
 		(at 1.27 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1262,7 +1262,7 @@
 	(pad "7" smd custom
 		(at 1.27 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1279,7 +1279,7 @@
 	(pad "7" smd custom
 		(at 1.27 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1306,7 +1306,7 @@
 	(pad "7" smd custom
 		(at 1.27 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1355,19 +1355,19 @@
 	(pad "7" smd circle
 		(at 1.27 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "4b20f149-82f6-406f-ba8f-27f99b532318")
 	)
 	(pad "8" smd circle
 		(at 3.81 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "b55f6e1e-d4b1-44de-848a-16631a907a85")
 	)
 	(pad "8" smd custom
 		(at 3.81 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1424,7 +1424,7 @@
 	(pad "8" smd custom
 		(at 3.81 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1441,7 +1441,7 @@
 	(pad "8" smd custom
 		(at 3.81 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1468,7 +1468,7 @@
 	(pad "8" smd custom
 		(at 3.81 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1517,19 +1517,19 @@
 	(pad "8" smd circle
 		(at 3.81 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "99463562-7b0a-48ce-8b07-888ff6d1c98d")
 	)
 	(pad "9" smd circle
 		(at 6.35 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "8853781d-fe25-44cb-88b3-66bb038f77e4")
 	)
 	(pad "9" smd custom
 		(at 6.35 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1586,7 +1586,7 @@
 	(pad "9" smd custom
 		(at 6.35 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1603,7 +1603,7 @@
 	(pad "9" smd custom
 		(at 6.35 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1630,7 +1630,7 @@
 	(pad "9" smd custom
 		(at 6.35 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1679,19 +1679,19 @@
 	(pad "9" smd circle
 		(at 6.35 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "50102e37-eb33-4098-8969-7cd5fd96c79e")
 	)
 	(pad "10" smd circle
 		(at 8.89 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "ea0992d8-8135-4711-a243-06ab5cd59a33")
 	)
 	(pad "10" smd custom
 		(at 8.89 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1748,7 +1748,7 @@
 	(pad "10" smd custom
 		(at 8.89 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1765,7 +1765,7 @@
 	(pad "10" smd custom
 		(at 8.89 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1792,7 +1792,7 @@
 	(pad "10" smd custom
 		(at 8.89 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1841,19 +1841,19 @@
 	(pad "10" smd circle
 		(at 8.89 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "1fca4791-cc66-454c-81b9-cb427125f621")
 	)
 	(pad "11" smd circle
 		(at 11.43 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "55e0ad40-4ab0-4f05-86cb-38f32011e737")
 	)
 	(pad "11" smd custom
 		(at 11.43 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -1910,7 +1910,7 @@
 	(pad "11" smd custom
 		(at 11.43 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1927,7 +1927,7 @@
 	(pad "11" smd custom
 		(at 11.43 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -1954,7 +1954,7 @@
 	(pad "11" smd custom
 		(at 11.43 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2003,19 +2003,19 @@
 	(pad "11" smd circle
 		(at 11.43 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "c1dbb649-e626-4c84-8ae2-6053464c7f89")
 	)
 	(pad "12" smd circle
 		(at 13.97 -8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "db1af243-f5ff-4bd2-bdd5-9e1d01987a97")
 	)
 	(pad "12" smd custom
 		(at 13.97 -5.715 180)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2072,7 +2072,7 @@
 	(pad "12" smd custom
 		(at 13.97 -3.81 180)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2089,7 +2089,7 @@
 	(pad "12" smd custom
 		(at 13.97 -3.81)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2116,7 +2116,7 @@
 	(pad "12" smd custom
 		(at 13.97 5.715 180)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2165,19 +2165,19 @@
 	(pad "12" smd circle
 		(at 13.97 8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "270a1185-f24f-42a0-ae95-2e3473025aa2")
 	)
 	(pad "13" smd circle
 		(at 13.97 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "84139374-ac21-4afe-8d12-6a91262a902b")
 	)
 	(pad "13" smd custom
 		(at 13.97 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2234,7 +2234,7 @@
 	(pad "13" smd custom
 		(at 13.97 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2251,7 +2251,7 @@
 	(pad "13" smd custom
 		(at 13.97 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2278,7 +2278,7 @@
 	(pad "13" smd custom
 		(at 13.97 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2327,19 +2327,19 @@
 	(pad "13" smd circle
 		(at 13.97 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "355d0c34-f9ca-4964-8571-74ffcd9ddaa2")
 	)
 	(pad "14" smd circle
 		(at 11.43 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "672bc924-df93-4c13-9fc1-05630d33ebff")
 	)
 	(pad "14" smd custom
 		(at 11.43 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2396,7 +2396,7 @@
 	(pad "14" smd custom
 		(at 11.43 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2413,7 +2413,7 @@
 	(pad "14" smd custom
 		(at 11.43 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2440,7 +2440,7 @@
 	(pad "14" smd custom
 		(at 11.43 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2489,19 +2489,19 @@
 	(pad "14" smd circle
 		(at 11.43 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "86c7d108-b529-4f03-b31c-5605df655c6a")
 	)
 	(pad "15" smd circle
 		(at 8.89 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "88574a95-079a-47cb-b251-8fe7ceca0b24")
 	)
 	(pad "15" smd custom
 		(at 8.89 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2558,7 +2558,7 @@
 	(pad "15" smd custom
 		(at 8.89 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2575,7 +2575,7 @@
 	(pad "15" smd custom
 		(at 8.89 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2602,7 +2602,7 @@
 	(pad "15" smd custom
 		(at 8.89 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2651,19 +2651,19 @@
 	(pad "15" smd circle
 		(at 8.89 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "b0f93a26-7b13-4405-8a73-336563f67a2a")
 	)
 	(pad "16" smd circle
 		(at 6.35 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "ce164354-0e88-4357-a636-07b03cc58d38")
 	)
 	(pad "16" smd custom
 		(at 6.35 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2720,7 +2720,7 @@
 	(pad "16" smd custom
 		(at 6.35 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2737,7 +2737,7 @@
 	(pad "16" smd custom
 		(at 6.35 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2764,7 +2764,7 @@
 	(pad "16" smd custom
 		(at 6.35 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2813,19 +2813,19 @@
 	(pad "16" smd circle
 		(at 6.35 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "d3db2b7d-cb3a-4008-824f-1dcf9afe610a")
 	)
 	(pad "17" smd circle
 		(at 3.81 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "dafc26e5-d91e-472a-86b1-da87376c70e4")
 	)
 	(pad "17" smd custom
 		(at 3.81 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2882,7 +2882,7 @@
 	(pad "17" smd custom
 		(at 3.81 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2899,7 +2899,7 @@
 	(pad "17" smd custom
 		(at 3.81 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -2926,7 +2926,7 @@
 	(pad "17" smd custom
 		(at 3.81 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -2975,19 +2975,19 @@
 	(pad "17" smd circle
 		(at 3.81 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "72705ea8-b64f-4ba1-9d96-2dcc6d3efdb6")
 	)
 	(pad "18" smd circle
 		(at 1.27 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "b56d37f0-3ada-4ae8-ae72-9f322768a0f9")
 	)
 	(pad "18" smd custom
 		(at 1.27 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3044,7 +3044,7 @@
 	(pad "18" smd custom
 		(at 1.27 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3061,7 +3061,7 @@
 	(pad "18" smd custom
 		(at 1.27 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3088,7 +3088,7 @@
 	(pad "18" smd custom
 		(at 1.27 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3137,19 +3137,19 @@
 	(pad "18" smd circle
 		(at 1.27 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "6eee5a48-b2e5-4949-9fde-c368180776ea")
 	)
 	(pad "19" smd circle
 		(at -1.27 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "646e53d0-8ab4-41ed-a574-01402ea25d50")
 	)
 	(pad "19" smd custom
 		(at -1.27 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3206,7 +3206,7 @@
 	(pad "19" smd custom
 		(at -1.27 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3223,7 +3223,7 @@
 	(pad "19" smd custom
 		(at -1.27 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3250,7 +3250,7 @@
 	(pad "19" smd custom
 		(at -1.27 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3299,19 +3299,19 @@
 	(pad "19" smd circle
 		(at -1.27 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "2ce3bc67-bd94-4324-a4d8-17a9e56e9782")
 	)
 	(pad "20" smd circle
 		(at -3.81 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "83d087d7-29cd-40f7-b910-3748a97ad6b7")
 	)
 	(pad "20" smd custom
 		(at -3.81 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3368,7 +3368,7 @@
 	(pad "20" smd custom
 		(at -3.81 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3385,7 +3385,7 @@
 	(pad "20" smd custom
 		(at -3.81 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3412,7 +3412,7 @@
 	(pad "20" smd custom
 		(at -3.81 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3461,19 +3461,19 @@
 	(pad "20" smd circle
 		(at -3.81 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "d0861922-f91e-4fd1-bc83-5e043bddbf7f")
 	)
 	(pad "21" smd circle
 		(at -6.35 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "234cbc51-f436-4ec5-b7fc-75bc24fc185c")
 	)
 	(pad "21" smd custom
 		(at -6.35 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3530,7 +3530,7 @@
 	(pad "21" smd custom
 		(at -6.35 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3547,7 +3547,7 @@
 	(pad "21" smd custom
 		(at -6.35 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3574,7 +3574,7 @@
 	(pad "21" smd custom
 		(at -6.35 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3623,19 +3623,19 @@
 	(pad "21" smd circle
 		(at -6.35 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "f0080568-16b5-4608-bb7b-f6a9dca5364a")
 	)
 	(pad "22" smd circle
 		(at -8.89 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "f81838b1-f188-4a4f-b270-b7b1d91003bc")
 	)
 	(pad "22" smd custom
 		(at -8.89 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3692,7 +3692,7 @@
 	(pad "22" smd custom
 		(at -8.89 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3709,7 +3709,7 @@
 	(pad "22" smd custom
 		(at -8.89 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3736,7 +3736,7 @@
 	(pad "22" smd custom
 		(at -8.89 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3785,19 +3785,19 @@
 	(pad "22" smd circle
 		(at -8.89 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "2112cd6e-8998-4208-aa8b-112e2c4cac94")
 	)
 	(pad "23" smd circle
 		(at -11.43 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "fb88d8f6-1cab-4439-ab00-47382c4c2c8d")
 	)
 	(pad "23" smd custom
 		(at -11.43 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3854,7 +3854,7 @@
 	(pad "23" smd custom
 		(at -11.43 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3871,7 +3871,7 @@
 	(pad "23" smd custom
 		(at -11.43 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -3898,7 +3898,7 @@
 	(pad "23" smd custom
 		(at -11.43 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -3947,19 +3947,19 @@
 	(pad "23" smd circle
 		(at -11.43 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "bf5e137b-64cc-4906-bb1c-a47b421b0180")
 	)
 	(pad "24" smd circle
 		(at -13.97 -8.515185 180)
 		(size 0.2 0.2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(uuid "d32e7692-4caa-44b3-b275-d26ab3b2291c")
 	)
 	(pad "24" smd custom
 		(at -13.97 -5.715)
 		(size 1.6 1.6)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -4008,14 +4008,14 @@
 	(pad "24" smd rect
 		(at -13.97 -5.715 90)
 		(size 2 2)
-		(layers "B.Cu" "B.Mask")
+		(layers "F.Cu" "F.Mask")
 		(zone_connect 0)
 		(uuid "aad450bf-e2b9-46f5-999f-c595b32823ed")
 	)
 	(pad "24" smd custom
 		(at -13.97 3.81)
 		(size 0.8 0.8)
-		(layers "F.Cu")
+		(layers "B.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -4032,7 +4032,7 @@
 	(pad "24" smd custom
 		(at -13.97 3.81 180)
 		(size 0.8 0.8)
-		(layers "B.Cu")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -4067,7 +4067,7 @@
 	(pad "24" smd custom
 		(at -13.97 5.715)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -4116,14 +4116,14 @@
 	(pad "24" smd rect
 		(at -13.97 5.715 270)
 		(size 2 2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(zone_connect 0)
 		(uuid "0b41e35a-7818-4946-b41b-818e2d545468")
 	)
 	(pad "24" smd circle
 		(at -13.97 8.515185)
 		(size 0.2 0.2)
-		(layers "F.Cu" "F.Mask")
+		(layers "B.Cu" "B.Mask")
 		(uuid "7905b3aa-9b28-4102-bba6-b4eb2661a8cf")
 	)
 	(embedded_fonts no)
