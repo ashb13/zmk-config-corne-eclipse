@@ -47,13 +47,13 @@
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
       bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-      tap-ms = <100>;
+      tap-ms = <30>;
     };
     scroll_horizontal: scroll_horizontal {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
       bindings = <&msc MOVE_X(-75)>, <&msc MOVE_X(75)>;
-      tap-ms = <100>;
+      tap-ms = <30>;
     };
   };
 
@@ -228,9 +228,9 @@
       lower_layer {
         display-name ="DEVSYM";
         bindings = <
-          &kp ESC               &mkp LCLK         &mmv MOVE_UP      &mkp RCLK         &none             &none             &kp GRAVE         &kp EXCL          &kp AMPS          &kp AT            &kp HASH              &kp DEL
-          &macro_caps           &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT   &none             &none             &kp DLLR          &kp LPAR          &kp LBRC          &kp LBKT          &kp PIPE              &kp CARET
-          &kp LSHFT             &none             &mkp MCLK         &none             &none             &none             &kp UNDER         &kp RPAR          &kp RBRC          &kp RBKT          &kp BACKSLASH         &kp TILDE
+          &kp ESC               &mkp LCLK         &mmv MOVE_UP      &mkp RCLK         &rgb_ug RGB_SAI   &rgb_ug RGB_BRI   &kp GRAVE         &kp EXCL          &kp AMPS          &kp AT            &kp HASH              &kp DEL
+          &macro_caps           &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT   &rgb_ug RGB_SAD   &rgb_ug RGB_BRD   &kp DLLR          &kp LPAR          &kp LBRC          &kp LBKT          &kp PIPE              &kp CARET
+          &kp LSHFT             &rgb_ug RGB_SPI   &mkp MCLK         &rgb_ug RGB_SPD   &rgb_ug RGB_HUI   &rgb_ug RGB_EFF   &kp UNDER         &kp RPAR          &kp RBRC          &kp RBKT          &kp BACKSLASH         &kp TILDE
                                                   &trans            &macro_emoji      &trans            &trans            &trans            &mo 7             &trans            &trans
         >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_vertical>;
@@ -251,7 +251,7 @@
         display-name ="SYSTEM";
         bindings = <
           &bt BT_CLR            &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4          &bt BT_CLR
-          &bootloader           &kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &out OUT_TOG      &studio_unlock    &none             &kp C_BRI_DEC     &kp C_BRI_INC         &bootloader
+          &bootloader           &kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &out OUT_TOG      &studio_unlock    &rgb_ug RGB_TOG   &kp C_BRI_DEC     &kp C_BRI_INC         &bootloader
           &sys_reset            &kp F11           &kp F12           &kp F13           &kp F14           &kp F15           &to 0             &to 1             &to 2             &to 3             &to 4                 &sys_reset
                                                   &trans            &kp LALT          &trans            &trans            &trans            &trans            &kp LGUI          &trans
         >;

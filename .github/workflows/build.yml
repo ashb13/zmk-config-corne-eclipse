@@ -33,7 +33,7 @@ jobs:
           for file in artifacts/firmware/*.uf2; do
             [ -f "$file" ] || continue
             basename=$(basename "$file")
-            layout=$(echo "$basename" | sed 's/^left_corne_eclipse_//;s/^right_corne_eclipse_//;s/\.zmk\.uf2$//')
+            layout=$(echo "$basename" | sed 's/^left_corne_eclipse_//;s/^right_corne_eclipse_//;s/\.zmk\.uf2$//;s/_encoder_or_switch$//;s/_trackpad_and_switch$//')
             mkdir -p "staging/$layout"
             cp "$file" "staging/$layout/"
           done
