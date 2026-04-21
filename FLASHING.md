@@ -21,6 +21,18 @@ If the keyboard is unresponsive or you can't access the system layer:
 2. Press the reset switch **twice in quick succession** (double-tap)
 3. The keyboard half will enter bootloader mode
 
+## Choosing the Right Firmware
+
+Each release zip contains firmware for both right-half hardware configurations:
+
+| File | Use When |
+|------|----------|
+| `left_corne_eclipse_<layout>.uf2` | Always flash this to the left half |
+| `right_corne_eclipse_<layout>_encoder_or_switch.uf2` | Right half has a rotary encoder or key switch in the encoder position |
+| `right_corne_eclipse_<layout>_trackpad_and_switch.uf2` | Right half has an Azoteq TPS43 trackpad wired up and a key switch in the encoder position |
+
+If you don't have a trackpad installed, use the `encoder_or_switch` firmware.
+
 ## Flashing the Firmware
 
 Once a keyboard half is in bootloader mode, it will appear as a USB drive on your computer (named **NICENANO**).
@@ -31,7 +43,7 @@ Once a keyboard half is in bootloader mode, it will appear as a USB drive on you
 4. Drag and drop the **left** `.uf2` file onto the **NICENANO** drive
 5. The drive will disconnect automatically when flashing is complete
 6. Put the **right half** into bootloader mode
-7. Drag and drop the **right** `.uf2` file onto the **NICENANO** drive
+7. Drag and drop the appropriate **right** `.uf2` file onto the **NICENANO** drive
 8. The drive will disconnect automatically when flashing is complete
 
 Both halves should now be running the new firmware.

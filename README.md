@@ -14,6 +14,7 @@ The Corne Eclipse is a highly customized wireless Corne MX with the following:
     - JST port with line passthrough for undercarriage battery storage
     - Native support for dual nice!view displays
     - Native support for dual EC11 encoders
+    - Native support for Azoteq TPS43 trackpad (right half, replaces encoder and display)
     - Native support for side mounted power switches
     - Native support for tenting puck
 - Custom shield casing design (based on Void's case)
