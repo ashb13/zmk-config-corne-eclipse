@@ -6,12 +6,18 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: frosthaven
       url-base: https://github.com/Frosthaven
+    - name: aym1607
+      url-base: https://github.com/AYM1607
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: frosthaven
+      revision: v0.3-peripheral-charging-bit
       import: app/west.yml
     - name: zmk-ext-power-smart-idle
       remote: frosthaven
+      revision: main
+    - name: zmk-driver-azoteq-iqs5xx
+      remote: aym1607
       revision: main
   self:
     path: config

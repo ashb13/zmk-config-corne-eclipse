@@ -33,7 +33,7 @@ jobs:
           for file in artifacts/firmware/*.uf2; do
             [ -f "$file" ] || continue
             basename=$(basename "$file")
-            layout=$(echo "$basename" | sed 's/^left_corne_eclipse_//;s/^right_corne_eclipse_//;s/\.zmk\.uf2$//')
+            layout=$(echo "$basename" | sed 's/^left_corne_eclipse_//;s/^right_corne_eclipse_//;s/\.zmk\.uf2$//;s/_encoder_or_switch$//;s/_trackpad_and_switch$//')
             mkdir -p "staging/$layout"
             cp "$file" "staging/$layout/"
           done
@@ -88,6 +88,8 @@ jobs:
             ---
 
             Each zip contains left and right `.uf2` firmware files. Extract the zip and follow the [flashing guide](https://github.com/${{ github.repository }}/blob/main/FLASHING.md) to install.
+
+            You can customize your keymap using [ZMK Studio](https://github.com/${{ github.repository }}/blob/main/KEYMAP.md#zmk-studio).
 
             Keymap Images:
             - [Typing Layers](https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/assets/images/samurai-legend-typing.png)

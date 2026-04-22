@@ -16,6 +16,7 @@
 | ✅ | 2 | [Reset Switches](https://splitkb.com/products/reset-buttons) | Tactile SMD reset switches. |
 | ❌ | 1-2 | [nice!view Display](https://nicekeyboards.com/nice-view/) | The left is the most important, as it shows active bluetooth state and profile. Be sure to get pins/sockets that accomodate your socketing height of the nice!nano. |
 | ❌ | 1-2 | [Alps EC11 Rotary Encoder](https://www.mouser.com/ProductDetail/Alps-Alpine/EC11N1524402?qs=W%2FMpXkg%252BdQ5mmk2EdvtXAA%3D%3D) | Alps Alpine EC11N1524402 or EC11 compatible encoder. |
+| ❌ | 1 | [Azoteq TPS43 Touchpad Module](https://holykeebs.com/products/touchpad-module) | Replaces the right encoder. Requires 5 wires (SDA, SCL, RDY, VCC, GND) to the nice!nano. See [wiring guide](WIRING_TRACKPAD.md). |
 
 ## Switches & Keycaps
 
@@ -41,7 +42,7 @@ I haven't yet verified the exact screws, so this list may not be exact. YMMV.
 |----------|---------|------|-------|
 | ✅ | 10 | [M2x8mm Countersunk Screws](https://www.aliexpress.us/item/2251832781782755.html) | Standoff bottom case screws. |
 | ✅ | 36 | [M2x5mm Button Head Screws](https://www.aliexpress.us/item/2251832780910689.html) | Standoff top plate screws. |
-| ✅ | 10 | [M2x8mm Female-Female Standoffs](https://www.aliexpress.us/item/2255801085594177.html) |  |
+| ✅ | 10 | [M2x4mm Female-Female Standoffs](https://www.amazon.com/dp/B0FLGTQZNN) |  |
 
 ## Fabrication
 

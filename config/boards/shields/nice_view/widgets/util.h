@@ -18,6 +18,7 @@
 struct status_state {
     uint8_t battery;
     bool charging;
+    bool battery_stale;
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
     struct zmk_endpoint_instance selected_endpoint;
     int active_profile_index;
@@ -26,6 +27,11 @@ struct status_state {
     uint8_t layer_index;
     const char *layer_label;
     uint8_t wpm[10];
+    uint8_t peripheral_battery;
+    bool peripheral_charging;
+    bool peripheral_connected;
+    bool peripheral_battery_stale;
+    bool caps_lock;
 #else
     bool connected;
 #endif
@@ -33,9 +39,7 @@ struct status_state {
 
 struct battery_status_state {
     uint8_t level;
-#if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
     bool usb_present;
-#endif
 };
 
 void rotate_canvas(lv_obj_t *canvas, lv_color_t cbuf[]);
