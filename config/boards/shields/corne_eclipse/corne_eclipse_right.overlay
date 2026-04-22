@@ -27,7 +27,12 @@
         ;
 };
 
-#ifdef USE_TRACKPAD
+/* Compatibility alias: pre-existing builds used plain USE_TRACKPAD. */
+#if defined(USE_TRACKPAD) && !defined(USE_TRACKPAD_TPS43) && !defined(USE_TRACKPAD_CIRQUE)
+#define USE_TRACKPAD_TPS43
+#endif
+
+#if defined(USE_TRACKPAD_TPS43) || defined(USE_TRACKPAD_CIRQUE)
 
 &right_encoder {
     status = "disabled";
@@ -37,6 +42,15 @@
     status = "disabled";
 };
 
+#else
+
+&right_encoder {
+    status = "okay";
+};
+
+#endif
+
+#ifdef USE_TRACKPAD_TPS43
 &pro_micro_i2c {
     trackpad: iqs5xx@74 {
         compatible = "azoteq,iqs5xx";
@@ -49,11 +63,25 @@
         flip-x;
     };
 };
+#endif
 
-#else
-
-&right_encoder {
-    status = "okay";
+#ifdef USE_TRACKPAD_CIRQUE
+&pro_micro_i2c {
+    trackpad: cirque_pinnacle@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>; /* 0x2c if the module's R1 jumper is bridged */
+        dr-gpios = <&pro_micro 8 GPIO_ACTIVE_HIGH>;
+        sensitivity = "4x";
+    };
 };
 
+/ {
+    glidepoint_listener: glidepoint_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad>;
+        /* Tune orientation after first flash if X/Y feel inverted:
+         * input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>;
+         */
+    };
+};
 #endif

@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/Frosthaven
     - name: aym1607
       url-base: https://github.com/AYM1607
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: frosthaven
@@ -18,6 +20,9 @@ manifest:
       revision: main
     - name: zmk-driver-azoteq-iqs5xx
       remote: aym1607
+      revision: main
+    - name: cirque-input-module
+      remote: petejohanson
       revision: main
   self:
     path: config
