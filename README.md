@@ -21,6 +21,16 @@ The Corne Eclipse is a highly customized wireless Corne MX with the following:
     - Undercarriage battery storage
     - Optimized material usage for bottom
     - Native support for tenting puck
+- ZMK modifications
+    - Display:
+        - More accurate battery display (numeric value)
+        - Track battery status of both halves on a single nice!view
+        - Capslock indicator
+    - RGB battery usage optimizations ([zmk-ext-power-smart-idle](https://github.com/Frosthaven/zmk-ext-power-smart-idle)):
+        - 20% brightness when not plugged in
+        - RGB auto-off on low battery when not plugged in
+        - Lights stay on when plugged in
+        - Eclipse v3 reversible variant uses a MOSFET that prevents drain when LEDs are off (coming soon)
 - Several default typing layouts available in [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases)
     - QWERTY
     - Colemak Mod DH (personal choice!)
