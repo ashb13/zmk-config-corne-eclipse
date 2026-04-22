@@ -21,6 +21,7 @@ The Corne Eclipse is a highly customized wireless Corne MX with the following:
     - Undercarriage battery storage
     - Optimized material usage for bottom
     - Native support for tenting puck
+- TPS43 trackpad driver support ([AYM1607/zmk-driver-azoteq-iqs5xx](https://github.com/AYM1607/zmk-driver-azoteq-iqs5xx))
 - ZMK modifications
     - Display:
         - More accurate battery display (numeric value)
