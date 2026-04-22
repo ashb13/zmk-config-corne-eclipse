@@ -23,15 +23,16 @@ If the keyboard is unresponsive or you can't access the system layer:
 
 ## Choosing the Right Firmware
 
-Each release zip contains firmware for both right-half hardware configurations:
+Each release zip contains firmware for every right-half hardware configuration:
 
 | File | Use When |
 |------|----------|
 | `left_corne_eclipse_<layout>.uf2` | Always flash this to the left half |
 | `right_corne_eclipse_<layout>_encoder_or_switch.uf2` | Right half has a rotary encoder or key switch in the encoder position |
-| `right_corne_eclipse_<layout>_trackpad_and_switch.uf2` | Right half has an Azoteq TPS43 trackpad wired up and a key switch in the encoder position |
+| `right_corne_eclipse_<layout>_tps43_trackpad_and_switch.uf2` | Right half has an **Azoteq TPS43** trackpad wired up and a key switch in the encoder position |
+| `right_corne_eclipse_<layout>_cirque_trackpad_and_switch.uf2` | Right half has a **Cirque Pinnacle** trackpad (TM040040 / TM035035) wired up and a key switch in the encoder position |
 
-If you don't have a trackpad installed, use the `encoder_or_switch` firmware.
+If you don't have a trackpad installed, use the `encoder_or_switch` firmware. If you do, pick the TPS43 or Cirque variant to match the physical module you wired. See [WIRING_TRACKPAD.md](WIRING_TRACKPAD.md) for wiring details.
 
 ## Flashing the Firmware
 
@@ -47,6 +48,8 @@ Once a keyboard half is in bootloader mode, it will appear as a USB drive on you
 8. The drive will disconnect automatically when flashing is complete
 
 Both halves should now be running the new firmware.
+
+> ⚠️ **The keyboard half must be physically connected to your computer via USB for the `NICENANO` drive to appear.** The reset switch / bootloader key only puts the half into bootloader mode — it does not expose the drive over Bluetooth. If no drive appears after a few seconds: confirm the USB cable is a data cable (not charge-only), try a different USB port, and verify the half is actually in bootloader mode.
 
 ## Resetting to Factory Settings
 

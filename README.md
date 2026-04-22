@@ -13,7 +13,7 @@ The Corne Eclipse is a highly customized wireless Corne MX with the following:
 - Custom circuit board design
     - JST port with line passthrough for undercarriage battery storage
     - Native support for dual nice!view displays
-    - Native support for dual EC11 encoders
+    - Native support for dual Alps EC11/EC12 encoders
     - Native support for Azoteq TPS43 trackpad (right half, replaces encoder and display)
     - Native support for side mounted power switches
     - Native support for tenting puck
@@ -21,7 +21,9 @@ The Corne Eclipse is a highly customized wireless Corne MX with the following:
     - Undercarriage battery storage
     - Optimized material usage for bottom
     - Native support for tenting puck
-- TPS43 trackpad driver support ([AYM1607/zmk-driver-azoteq-iqs5xx](https://github.com/AYM1607/zmk-driver-azoteq-iqs5xx))
+- Peripheral-side trackpad support
+    - TPS43 (and related Azoteq IQS5xx modules) via [AYM1607/zmk-driver-azoteq-iqs5xx](https://github.com/AYM1607/zmk-driver-azoteq-iqs5xx)
+    - Cirque Touchpad via [petejohanson/cirque-input-module](https://github.com/petejohanson/cirque-input-module)
 - ZMK modifications
     - Display:
         - More accurate battery display (numeric value)
