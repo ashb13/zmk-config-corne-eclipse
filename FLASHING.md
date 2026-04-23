@@ -23,28 +23,27 @@ If the keyboard is unresponsive or you can't access the system layer:
 
 ## Choosing the Right Firmware
 
-Each release zip contains firmware for every right-half hardware configuration:
+Each release ships a separate zip per typing layout × right-half hardware combination. Pick one zip that matches both your desired default typing layer **and** what's installed in the right-half encoder position. Every zip contains the correct left + right `.uf2` pair already.
 
-| File | Use When |
-|------|----------|
-| `left_corne_eclipse_<layout>.uf2` | Always flash this to the left half |
-| `right_corne_eclipse_<layout>_encoder_or_switch.uf2` | Right half has a rotary encoder or key switch in the encoder position |
-| `right_corne_eclipse_<layout>_tps43_trackpad_and_switch.uf2` | Right half has an **Azoteq TPS43** trackpad wired up and a key switch in the encoder position |
-| `right_corne_eclipse_<layout>_cirque_trackpad_and_switch.uf2` | Right half has a **Cirque Pinnacle** trackpad (TM040040 / TM035035) wired up and a key switch in the encoder position |
+| Zip | Use When |
+|-----|----------|
+| `corne_eclipse_<layout>.zip` | Right half has a **rotary encoder or key switch** in the encoder position (no trackpad) |
+| `corne_eclipse_<layout>_tps43.zip` | Right half has an **Azoteq TPS43** trackpad wired up |
+| `corne_eclipse_<layout>_cirque.zip` | Right half has a **Cirque Pinnacle** trackpad (TM040040 / TM035035) wired up |
 
-If you don't have a trackpad installed, use the `encoder_or_switch` firmware. If you do, pick the TPS43 or Cirque variant to match the physical module you wired. See [WIRING_TRACKPAD.md](WIRING_TRACKPAD.md) for wiring details.
+`<layout>` is one of `qwerty`, `colemak_dh`, `colemak`, `workman`, `dvorak`. See [WIRING_TRACKPAD.md](WIRING_TRACKPAD.md) for wiring details on either trackpad module.
 
 ## Flashing the Firmware
 
 Once a keyboard half is in bootloader mode, it will appear as a USB drive on your computer (named **NICENANO**).
 
-1. Download the firmware zip for your desired default typing layout from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page
-2. Extract the zip to get the left and right `.uf2` files
+1. Download the zip that matches your layout + right-half hardware from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page
+2. Extract the zip — you'll get a `left_corne_eclipse_<layout>.zmk.uf2` and a matching `right_corne_eclipse_<layout>_*.zmk.uf2`
 3. Put the **left half** into bootloader mode
 4. Drag and drop the **left** `.uf2` file onto the **NICENANO** drive
 5. The drive will disconnect automatically when flashing is complete
 6. Put the **right half** into bootloader mode
-7. Drag and drop the appropriate **right** `.uf2` file onto the **NICENANO** drive
+7. Drag and drop the **right** `.uf2` file onto the **NICENANO** drive
 8. The drive will disconnect automatically when flashing is complete
 
 Both halves should now be running the new firmware.
