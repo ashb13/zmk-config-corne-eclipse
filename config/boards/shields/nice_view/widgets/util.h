@@ -34,6 +34,12 @@ struct status_state {
     bool caps_lock;
 #else
     bool connected;
+#if IS_ENABLED(CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_MIRROR)
+    uint8_t central_battery;
+    bool central_charging;
+    bool central_battery_stale;
+    bool central_battery_received;
+#endif
 #endif
 };
 

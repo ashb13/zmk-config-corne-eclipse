@@ -103,18 +103,14 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
         lv_canvas_draw_text(canvas, 0, 2, 34, &bolt_dsc, LV_SYMBOL_CHARGE);
     } else {
         lv_draw_label_dsc_t batt_label;
-        init_label_dsc(&batt_label, LVGL_FOREGROUND, &lv_font_unscii_16, LV_TEXT_ALIGN_CENTER);
+        init_label_dsc(&batt_label, LVGL_FOREGROUND, &lv_font_unscii_8, LV_TEXT_ALIGN_CENTER);
         char left_batt[4];
         if (state->battery_stale) {
             snprintf(left_batt, sizeof(left_batt), "..");
         } else {
-            // Cap at 99: 100 is essentially never a real resting reading
-            // (charger drives the cell to 4.20 V, which only the LUT's top of
-            // the curve hits). Showing 99 avoids the misleading "perfect" look.
-            uint8_t lvl = state->battery > 99 ? 99 : state->battery;
-            snprintf(left_batt, sizeof(left_batt), "%d", lvl);
+            snprintf(left_batt, sizeof(left_batt), "%d", state->battery);
         }
-        lv_canvas_draw_text(canvas, 0, 2, 34, &batt_label, left_batt);
+        lv_canvas_draw_text(canvas, 0, 6, 34, &batt_label, left_batt);
     }
 
     if (!state->peripheral_connected) {
@@ -128,15 +124,14 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
         lv_canvas_draw_text(canvas, 34, 2, 34, &bolt_dsc, LV_SYMBOL_CHARGE);
     } else {
         lv_draw_label_dsc_t pbatt_label;
-        init_label_dsc(&pbatt_label, LVGL_FOREGROUND, &lv_font_unscii_16, LV_TEXT_ALIGN_CENTER);
+        init_label_dsc(&pbatt_label, LVGL_FOREGROUND, &lv_font_unscii_8, LV_TEXT_ALIGN_CENTER);
         char right_batt[4];
         if (state->peripheral_battery_stale) {
             snprintf(right_batt, sizeof(right_batt), "..");
         } else {
-            uint8_t lvl = state->peripheral_battery > 99 ? 99 : state->peripheral_battery;
-            snprintf(right_batt, sizeof(right_batt), "%d", lvl);
+            snprintf(right_batt, sizeof(right_batt), "%d", state->peripheral_battery);
         }
-        lv_canvas_draw_text(canvas, 34, 2, 34, &pbatt_label, right_batt);
+        lv_canvas_draw_text(canvas, 34, 6, 34, &pbatt_label, right_batt);
     }
 
     // Rotate canvas
