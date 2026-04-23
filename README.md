@@ -55,7 +55,7 @@ Powered by [zmk-ext-power-smart-idle](https://github.com/Frosthaven/zmk-ext-powe
 
 ## Default Typing Layouts
 
-Available in [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases).
+Available in [releases](https://github.com/ashb13/zmk-config-corne-eclipse/releases).
 
 - QWERTY
 - Colemak Mod DH (personal choice!)
