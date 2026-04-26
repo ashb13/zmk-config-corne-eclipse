@@ -58,7 +58,7 @@
 			(xy -1.675 -1.25) (xy -0.2 -1.25) (xy -0.2 -0.65) (xy -1.675 -0.65)
 		)
 		(stroke
-			(width 0.1)
+			(width 0)
 			(type solid)
 		)
 		(fill yes)
@@ -70,7 +70,7 @@
 			(xy -1.675 0.65) (xy -0.2 0.65) (xy -0.2 1.25) (xy -1.675 1.25)
 		)
 		(stroke
-			(width 0.1)
+			(width 0)
 			(type solid)
 		)
 		(fill yes)
@@ -82,7 +82,7 @@
 			(xy 0.2 -0.3) (xy 1.675 -0.3) (xy 1.675 0.3) (xy 0.2 0.3)
 		)
 		(stroke
-			(width 0.1)
+			(width 0)
 			(type solid)
 		)
 		(fill yes)
@@ -94,7 +94,7 @@
 			(xy -1.675 -0.3) (xy -0.2 -0.3) (xy -0.2 0.3) (xy -1.675 0.3)
 		)
 		(stroke
-			(width 0.1)
+			(width 0)
 			(type solid)
 		)
 		(fill yes)
@@ -106,7 +106,7 @@
 			(xy 0.2 -1.25) (xy 1.675 -1.25) (xy 1.675 -0.65) (xy 0.2 -0.65)
 		)
 		(stroke
-			(width 0.1)
+			(width 0)
 			(type solid)
 		)
 		(fill yes)
@@ -118,7 +118,7 @@
 			(xy 0.2 0.65) (xy 1.675 0.65) (xy 1.675 1.25) (xy 0.2 1.25)
 		)
 		(stroke
-			(width 0.1)
+			(width 0)
 			(type solid)
 		)
 		(fill yes)
@@ -287,8 +287,8 @@
 		(uuid "ab19a000-0000-0000-0000-000000000001")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
+				(size 1.0 1.0)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -298,8 +298,8 @@
 		(uuid "ab19a000-0000-0000-0000-000000000002")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
+				(size 1.0 1.0)
+				(thickness 0.15)
 			)
 			(justify mirror)
 		)

@@ -9,8 +9,8 @@
 		(uuid "090779e4-7116-452f-bbd0-85fc1adec8d6")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
+				(size 1.0 1.0)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -51,7 +51,10 @@
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
-			(xy -3.2 -2.1) (xy -1.7 -2.1) (xy -1.7 -1.2) (xy -3.2 -1.2)
+			(xy -3.2 -2.125)
+			(xy -1.7 -2.125)
+			(xy -1.7 -1.07)
+			(xy -3.2 -1.07)
 		)
 		(stroke
 			(width 0.1)
@@ -63,7 +66,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy -3.2 1.2) (xy -1.7 1.2) (xy -1.7 2.1) (xy -3.2 2.1)
+			(xy -3.2 1.07)
+			(xy -1.7 1.07)
+			(xy -1.7 2.125)
+			(xy -3.2 2.125)
 		)
 		(stroke
 			(width 0.1)
@@ -75,7 +81,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy 1.7 -2.1) (xy 3.2 -2.1) (xy 3.2 -1.2) (xy 1.7 -1.2)
+			(xy 1.7 -2.125)
+			(xy 3.2 -2.125)
+			(xy 3.2 -1.07)
+			(xy 1.7 -1.07)
 		)
 		(stroke
 			(width 0.1)
@@ -87,7 +96,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy 1.7 1.2) (xy 3.2 1.2) (xy 3.2 2.1) (xy 1.7 2.1)
+			(xy 1.7 1.07)
+			(xy 3.2 1.07)
+			(xy 3.2 2.125)
+			(xy 1.7 2.125)
 		)
 		(stroke
 			(width 0.1)
@@ -99,7 +111,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy -3.2 -2.1) (xy -1.7 -2.1) (xy -1.7 -1.2) (xy -3.2 -1.2)
+			(xy -3.2 -2.125)
+			(xy -1.7 -2.125)
+			(xy -1.7 -1.07)
+			(xy -3.2 -1.07)
 		)
 		(stroke
 			(width 0.1)
@@ -111,7 +126,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy -3.2 1.2) (xy -1.7 1.2) (xy -1.7 2.1) (xy -3.2 2.1)
+			(xy -3.2 1.07)
+			(xy -1.7 1.07)
+			(xy -1.7 2.125)
+			(xy -3.2 2.125)
 		)
 		(stroke
 			(width 0.1)
@@ -123,7 +141,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy 1.7 -2.1) (xy 3.2 -2.1) (xy 3.2 -1.2) (xy 1.7 -1.2)
+			(xy 1.7 -2.125)
+			(xy 3.2 -2.125)
+			(xy 3.2 -1.07)
+			(xy 1.7 -1.07)
 		)
 		(stroke
 			(width 0.1)
@@ -135,7 +156,10 @@
 	)
 	(fp_poly
 		(pts
-			(xy 1.7 1.2) (xy 3.2 1.2) (xy 3.2 2.1) (xy 1.7 2.1)
+			(xy 1.7 1.07)
+			(xy 3.2 1.07)
+			(xy 3.2 2.125)
+			(xy 1.7 2.125)
 		)
 		(stroke
 			(width 0.1)
@@ -191,15 +215,15 @@
 		(uuid "8dd13939-a55e-4b9c-9a45-b1f504a3a397")
 		(effects
 			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
+				(size 1.0 1.0)
+				(thickness 0.15)
 			)
 			(justify mirror)
 		)
 	)
 	(pad "1" smd custom
-		(at -2.45 -1.65)
-		(size 1.5 0.9)
+		(at -2.45 -1.5975)
+		(size 1.6 1.155)
 		(layers "F.Cu")
 		(zone_connect 2)
 		(options
@@ -207,9 +231,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy 0.75 -0.475) (xy 2.6 -0.475) (xy 2.6 -0.225) (xy 0.75 -0.225)
+					(xy 0.75 -0.5275)
+					(xy 2.6 -0.5275)
+					(xy 2.6 -0.2775)
+					(xy 0.75 -0.2775)
 				)
 				(width 0.1)
 				(fill yes)
@@ -226,8 +254,8 @@
 		(uuid "1cb46f22-a701-43df-a958-2796a2826a95")
 	)
 	(pad "1" smd custom
-		(at 2.45 -1.65 180)
-		(size 1.5 0.9)
+		(at 2.45 -1.5975 180)
+		(size 1.6 1.155)
 		(layers "B.Cu")
 		(zone_connect 2)
 		(options
@@ -235,9 +263,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy 0.75 0.225) (xy 2.6 0.225) (xy 2.6 0.475) (xy 0.75 0.475)
+					(xy 0.75 0.2775)
+					(xy 2.6 0.2775)
+					(xy 2.6 0.5275)
+					(xy 0.75 0.5275)
 				)
 				(width 0.1)
 				(fill yes)
@@ -246,8 +278,8 @@
 		(uuid "2818f027-f67c-4810-813d-8b8bf09eb2ab")
 	)
 	(pad "2" smd custom
-		(at -2.45 1.65)
-		(size 1.5 0.9)
+		(at -2.45 1.5975)
+		(size 1.6 1.155)
 		(layers "F.Cu")
 		(zone_connect 2)
 		(options
@@ -255,9 +287,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy 0.75 0.225) (xy 2.6 0.225) (xy 2.6 0.475) (xy 0.75 0.475)
+					(xy 0.75 0.2775)
+					(xy 2.6 0.2775)
+					(xy 2.6 0.5275)
+					(xy 0.75 0.5275)
 				)
 				(width 0.1)
 				(fill yes)
@@ -274,8 +310,8 @@
 		(uuid "71c56179-6c74-4a21-a7c5-22785e9a256e")
 	)
 	(pad "2" smd custom
-		(at 2.45 1.65 180)
-		(size 1.5 0.9)
+		(at 2.45 1.5975 180)
+		(size 1.6 1.155)
 		(layers "B.Cu")
 		(zone_connect 2)
 		(options
@@ -283,9 +319,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy 0.75 -0.475) (xy 2.6 -0.475) (xy 2.6 -0.225) (xy 0.75 -0.225)
+					(xy 0.75 -0.5275)
+					(xy 2.6 -0.5275)
+					(xy 2.6 -0.2775)
+					(xy 0.75 -0.2775)
 				)
 				(width 0.1)
 				(fill yes)
@@ -294,8 +334,8 @@
 		(uuid "949513be-bfc0-4efa-8391-0850714a7af6")
 	)
 	(pad "3" smd custom
-		(at -2.45 1.65 180)
-		(size 1.5 0.9)
+		(at -2.45 1.5975 180)
+		(size 1.6 1.155)
 		(layers "B.Cu")
 		(zone_connect 2)
 		(options
@@ -303,9 +343,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy -0.75 0.225) (xy -2.6 0.225) (xy -2.6 0.475) (xy -0.75 0.475)
+					(xy -2.6 0.2775)
+					(xy -0.75 0.2775)
+					(xy -0.75 0.5275)
+					(xy -2.6 0.5275)
 				)
 				(width 0.1)
 				(fill yes)
@@ -314,7 +358,7 @@
 		(uuid "98fbd832-4411-4e0f-a639-561922c505f1")
 	)
 	(pad "3" thru_hole circle
-		(at 0 1.15 180)
+		(at 0 1.195 180)
 		(size 0.6 0.6)
 		(drill 0.3048)
 		(layers "*.Cu")
@@ -322,8 +366,8 @@
 		(uuid "0d282fd0-a988-434d-bbd4-e464832ec696")
 	)
 	(pad "3" smd custom
-		(at 2.45 1.65)
-		(size 1.5 0.9)
+		(at 2.45 1.5975)
+		(size 1.6 1.155)
 		(layers "F.Cu")
 		(zone_connect 2)
 		(options
@@ -331,9 +375,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy -0.75 -0.475) (xy -2.6 -0.475) (xy -2.6 -0.225) (xy -0.75 -0.225)
+					(xy -2.6 -0.5275)
+					(xy -0.75 -0.5275)
+					(xy -0.75 -0.2775)
+					(xy -2.6 -0.2775)
 				)
 				(width 0.1)
 				(fill yes)
@@ -342,8 +390,8 @@
 		(uuid "565c723a-9303-4750-ba2f-2f6c7f30b482")
 	)
 	(pad "4" smd custom
-		(at -2.45 -1.65 180)
-		(size 1.5 0.9)
+		(at -2.45 -1.5975 180)
+		(size 1.6 1.155)
 		(layers "B.Cu")
 		(zone_connect 2)
 		(options
@@ -351,9 +399,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy -0.75 -0.475) (xy -2.6 -0.475) (xy -2.6 -0.225) (xy -0.75 -0.225)
+					(xy -2.6 -0.5275)
+					(xy -0.75 -0.5275)
+					(xy -0.75 -0.2775)
+					(xy -2.6 -0.2775)
 				)
 				(width 0.1)
 				(fill yes)
@@ -362,7 +414,7 @@
 		(uuid "df050f48-5d2e-40bd-ad84-9959dbc6148a")
 	)
 	(pad "4" thru_hole circle
-		(at 0 -1.15 180)
+		(at 0 -1.195 180)
 		(size 0.6 0.6)
 		(drill 0.3048)
 		(layers "*.Cu")
@@ -370,8 +422,8 @@
 		(uuid "65fa2719-da0d-4260-ab6e-ce5704a0b017")
 	)
 	(pad "4" smd custom
-		(at 2.45 -1.65)
-		(size 1.5 0.9)
+		(at 2.45 -1.5975)
+		(size 1.6 1.155)
 		(layers "F.Cu")
 		(zone_connect 2)
 		(options
@@ -379,9 +431,13 @@
 			(anchor rect)
 		)
 		(primitives
+			(gr_bbox (start -0.2 -0.1) (end 0.2 0.1))
 			(gr_poly
 				(pts
-					(xy -0.75 0.225) (xy -2.6 0.225) (xy -2.6 0.475) (xy -0.75 0.475)
+					(xy -2.6 0.2775)
+					(xy -0.75 0.2775)
+					(xy -0.75 0.5275)
+					(xy -2.6 0.5275)
 				)
 				(width 0.1)
 				(fill yes)
