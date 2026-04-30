@@ -43,6 +43,7 @@ struct output_status_state {
     int active_profile_index;
     bool active_profile_connected;
     bool active_profile_bonded;
+    bool profile_assigned[5];
 };
 
 struct layer_status_state {
@@ -174,6 +175,13 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
             lv_draw_arc_dsc_t arc_filled;
             init_arc_dsc(&arc_filled, LVGL_FOREGROUND, r);
             lv_canvas_draw_arc(canvas, cx, cy, r, 0, 359, &arc_filled);
+        } else if (state->profile_assigned[i]) {
+            lv_draw_arc_dsc_t arc_outline;
+            init_arc_dsc(&arc_outline, LVGL_FOREGROUND, 1);
+            lv_canvas_draw_arc(canvas, cx, cy, r, 0, 359, &arc_outline);
+            lv_draw_rect_dsc_t dot_dsc;
+            init_rect_dsc(&dot_dsc, LVGL_FOREGROUND);
+            lv_canvas_draw_rect(canvas, cx - 1, cy - 1, 3, 3, &dot_dsc);
         } else {
             draw_dotted_circle(canvas, cx, cy, r, LVGL_FOREGROUND, 20);
         }
@@ -350,6 +358,9 @@ static void set_output_status(struct zmk_widget_status *widget,
     widget->state.active_profile_index = state->active_profile_index;
     widget->state.active_profile_connected = state->active_profile_connected;
     widget->state.active_profile_bonded = state->active_profile_bonded;
+    for (int i = 0; i < 5; i++) {
+        widget->state.profile_assigned[i] = state->profile_assigned[i];
+    }
 
     draw_top(widget->obj, widget->cbuf, &widget->state);
     draw_middle(widget->obj, widget->cbuf2, &widget->state);
@@ -361,12 +372,16 @@ static void output_status_update_cb(struct output_status_state state) {
 }
 
 static struct output_status_state output_status_get_state(const zmk_event_t *_eh) {
-    return (struct output_status_state){
+    struct output_status_state s = {
         .selected_endpoint = zmk_endpoints_selected(),
         .active_profile_index = zmk_ble_active_profile_index(),
         .active_profile_connected = zmk_ble_active_profile_is_connected(),
         .active_profile_bonded = !zmk_ble_active_profile_is_open(),
     };
+    for (int i = 0; i < 5; i++) {
+        s.profile_assigned[i] = !zmk_ble_profile_is_open(i);
+    }
+    return s;
 }
 
 ZMK_DISPLAY_WIDGET_LISTENER(widget_output_status, struct output_status_state,
