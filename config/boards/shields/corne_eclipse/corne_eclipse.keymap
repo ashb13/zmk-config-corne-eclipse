@@ -233,7 +233,7 @@
           &kp LSHFT             &rgb_ug RGB_SPI   &mkp MCLK         &rgb_ug RGB_SPD   &rgb_ug RGB_HUI   &rgb_ug RGB_EFF   &kp UNDER         &kp RPAR          &kp RBRC          &kp RBKT          &kp BACKSLASH         &kp TILDE
                                                   &trans            &macro_emoji      &trans            &trans            &trans            &mo 7             &trans            &trans
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_vertical>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_horizontal>;
       };
 
       raise_layer {
