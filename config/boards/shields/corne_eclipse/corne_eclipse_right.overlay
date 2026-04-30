@@ -28,11 +28,11 @@
 };
 
 /* Compatibility alias: pre-existing builds used plain USE_TRACKPAD. */
-#if defined(USE_TRACKPAD) && !defined(USE_TRACKPAD_TPS43) && !defined(USE_TRACKPAD_CIRQUE)
-#define USE_TRACKPAD_TPS43
+#if defined(USE_TRACKPAD) && !defined(USE_TRACKPAD_AZOTEQ) && !defined(USE_TRACKPAD_CIRQUE)
+#define USE_TRACKPAD_AZOTEQ
 #endif
 
-#if defined(USE_TRACKPAD_TPS43) || defined(USE_TRACKPAD_CIRQUE)
+#if defined(USE_TRACKPAD_AZOTEQ) || defined(USE_TRACKPAD_CIRQUE)
 
 &right_encoder {
     status = "disabled";
@@ -50,7 +50,7 @@
 
 #endif
 
-#ifdef USE_TRACKPAD_TPS43
+#ifdef USE_TRACKPAD_AZOTEQ
 &pro_micro_i2c {
     trackpad: iqs5xx@74 {
         compatible = "azoteq,iqs5xx";

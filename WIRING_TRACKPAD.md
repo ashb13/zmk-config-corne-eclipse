@@ -54,7 +54,7 @@ The left half display is unaffected.
 
 ### Firmware
 
-Flash `right_corne_eclipse_<layout>_tps43_trackpad_and_switch.uf2` from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page. See [FLASHING.md](FLASHING.md) for flashing instructions.
+Flash `right_corne_eclipse_<layout>_azoteq_trackpad_and_switch.uf2` from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page. See [FLASHING.md](FLASHING.md) for flashing instructions.
 
 ---
 
