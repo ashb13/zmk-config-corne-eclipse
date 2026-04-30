@@ -28,7 +28,7 @@ Each release ships a separate zip per typing layout × right-half hardware combi
 | Zip | Use When |
 |-----|----------|
 | `corne_eclipse_<layout>.zip` | Right half has a **rotary encoder or key switch** in the encoder position (no trackpad) |
-| `corne_eclipse_<layout>_tps43.zip` | Right half has an **Azoteq TPS43** trackpad wired up |
+| `corne_eclipse_<layout>_azoteq.zip` | Right half has an **Azoteq IQS5xx** trackpad (TPS43, TPS50, TPS65) wired up |
 | `corne_eclipse_<layout>_cirque.zip` | Right half has a **Cirque Pinnacle** trackpad (TM040040 / TM035035) wired up |
 
 `<layout>` is one of `qwerty`, `colemak_dh`, `colemak`, `workman`, `dvorak`. See [WIRING_TRACKPAD.md](WIRING_TRACKPAD.md) for wiring details on either trackpad module.
