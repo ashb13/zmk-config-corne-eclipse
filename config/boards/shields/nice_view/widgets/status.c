@@ -176,9 +176,20 @@ static void draw_middle(lv_obj_t *widget, lv_color_t cbuf[], const struct status
             init_arc_dsc(&arc_filled, LVGL_FOREGROUND, r);
             lv_canvas_draw_arc(canvas, cx, cy, r, 0, 359, &arc_filled);
         } else if (state->profile_assigned[i]) {
-            lv_draw_arc_dsc_t arc_outline;
-            init_arc_dsc(&arc_outline, LVGL_FOREGROUND, 1);
-            lv_canvas_draw_arc(canvas, cx, cy, r, 0, 359, &arc_outline);
+            // Rounded rect with LV_RADIUS_CIRCLE renders a symmetric 1-pixel
+            // outline circle (avoids the Bresenham asymmetry of lv_canvas_draw_arc
+            // at even radii that biased the bullseye dot to the bottom-right).
+            // Diameter = 2*r + 1 = 13 (odd, so visual center sits exactly on cx,cy).
+            lv_draw_rect_dsc_t circle_dsc;
+            lv_draw_rect_dsc_init(&circle_dsc);
+            circle_dsc.bg_opa = LV_OPA_TRANSP;
+            circle_dsc.border_color = LVGL_FOREGROUND;
+            circle_dsc.border_opa = LV_OPA_COVER;
+            circle_dsc.border_width = 1;
+            circle_dsc.radius = LV_RADIUS_CIRCLE;
+            int d = 2 * r + 1;
+            lv_canvas_draw_rect(canvas, cx - r, cy - r, d, d, &circle_dsc);
+
             lv_draw_rect_dsc_t dot_dsc;
             init_rect_dsc(&dot_dsc, LVGL_FOREGROUND);
             lv_canvas_draw_rect(canvas, cx - 1, cy - 1, 3, 3, &dot_dsc);
