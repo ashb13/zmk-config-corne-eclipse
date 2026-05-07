@@ -147,6 +147,254 @@ def edge_cuts_bbox(pcb_path):
     return min(xs), min(ys), max(xs), max(ys)
 
 
+def parse_edge_cuts_to_linestrings(pcb_path):
+    """Parse Edge.Cuts geometry from .kicad_pcb into shapely LineStrings.
+    Arcs and curves are sampled at 64 points each."""
+    from shapely.geometry import LineString
+    text = open(pcb_path).read()
+
+    def iter_blocks_local(s, names):
+        i = 0
+        while i < len(s):
+            best = None
+            for n in names:
+                tok = f"({n}"
+                j = s.find(tok, i)
+                while j != -1 and j+len(tok) < len(s) and s[j+len(tok)] not in (" ","\n","\t","("):
+                    j = s.find(tok, j+1)
+                if j != -1 and (best is None or j < best[0]):
+                    best = (j, n)
+            if best is None: break
+            start, name = best
+            depth = 0; k = start
+            while k < len(s):
+                c = s[k]
+                if c == "(": depth += 1
+                elif c == ")":
+                    depth -= 1
+                    if depth == 0: yield name, s[start:k+1]; i = k+1; break
+                k += 1
+            else: break
+
+    ls_list = []
+    for name, block in iter_blocks_local(text, ["gr_line","gr_arc","gr_curve","gr_circle","gr_poly","gr_rect"]):
+        if 'layer "Edge.Cuts"' not in block: continue
+        if name == "gr_line":
+            sm = re.search(r"\(start\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            em = re.search(r"\(end\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            if sm and em:
+                s = (float(sm.group(1)), float(sm.group(2)))
+                e = (float(em.group(1)), float(em.group(2)))
+                if s != e:
+                    ls_list.append(LineString([s, e]))
+        elif name == "gr_arc":
+            sm = re.search(r"\(start\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            mm = re.search(r"\(mid\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            em = re.search(r"\(end\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            if sm and mm and em:
+                sx,sy = float(sm.group(1)), float(sm.group(2))
+                mx,my = float(mm.group(1)), float(mm.group(2))
+                ex,ey = float(em.group(1)), float(em.group(2))
+                ax_,ay_ = sx-mx, sy-my; bx_,by_ = ex-mx, ey-my
+                d_ = 2*(ax_*by_ - ay_*bx_)
+                if abs(d_) < 1e-9:
+                    ls_list.append(LineString([(sx,sy),(ex,ey)]))
+                else:
+                    ux = (by_*(ax_*ax_+ay_*ay_)-ay_*(bx_*bx_+by_*by_))/d_+mx
+                    uy = (ax_*(bx_*bx_+by_*by_)-bx_*(ax_*ax_+ay_*ay_))/d_+my
+                    r = math.hypot(sx-ux, sy-uy)
+                    a0 = math.atan2(sy-uy, sx-ux); a2 = math.atan2(ey-uy, ex-ux); am = math.atan2(my-uy, mx-ux)
+                    delta = a2 - a0
+                    if delta <= 0: delta += 2*math.pi
+                    da_m = (am-a0) % (2*math.pi)
+                    if da_m > delta: delta -= 2*math.pi
+                    pts = []
+                    for i in range(65):
+                        t = i/64; a = a0 + t*delta
+                        pts.append((ux+r*math.cos(a), uy+r*math.sin(a)))
+                    ls_list.append(LineString(pts))
+        elif name == "gr_curve":
+            ctrl = [(float(a),float(b)) for a,b in re.findall(r"\(xy\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)]
+            if len(ctrl) >= 4:
+                P0,P1,P2,P3 = ctrl[:4]
+                pts = []
+                for i in range(65):
+                    t = i/64; mt = 1-t
+                    pts.append((mt**3*P0[0]+3*mt**2*t*P1[0]+3*mt*t**2*P2[0]+t**3*P3[0],
+                                mt**3*P0[1]+3*mt**2*t*P1[1]+3*mt*t**2*P2[1]+t**3*P3[1]))
+                ls_list.append(LineString(pts))
+        elif name == "gr_circle":
+            cm = re.search(r"\(center\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            em = re.search(r"\(end\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            if cm and em:
+                cx,cy = float(cm.group(1)), float(cm.group(2))
+                ex,ey = float(em.group(1)), float(em.group(2))
+                r = math.hypot(ex-cx, ey-cy)
+                pts = [(cx+r*math.cos(2*math.pi*i/64), cy+r*math.sin(2*math.pi*i/64)) for i in range(65)]
+                ls_list.append(LineString(pts))
+        elif name == "gr_rect":
+            sm = re.search(r"\(start\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            em = re.search(r"\(end\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)
+            if sm and em:
+                x1,y1 = float(sm.group(1)), float(sm.group(2))
+                x2,y2 = float(em.group(1)), float(em.group(2))
+                ls_list.append(LineString([(x1,y1),(x2,y1),(x2,y2),(x1,y2),(x1,y1)]))
+        elif name == "gr_poly":
+            pts = [(float(a),float(b)) for a,b in re.findall(r"\(xy\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)\)", block)]
+            if pts:
+                if pts[0] != pts[-1]:
+                    pts.append(pts[0])
+                ls_list.append(LineString(pts))
+    return ls_list
+
+
+def parse_thru_hole_pads(pcb_path):
+    """Find every thru_hole / np_thru_hole pad in every footprint and return their
+    absolute (cx, cy, drill_radius). These are HOLES the laser must cut."""
+    text = open(pcb_path).read()
+    holes = []
+
+    def iter_blocks_local(s, names):
+        i = 0
+        while i < len(s):
+            best = None
+            for n in names:
+                tok = f"({n}"
+                j = s.find(tok, i)
+                while j != -1 and j+len(tok) < len(s) and s[j+len(tok)] not in (" ","\n","\t","("):
+                    j = s.find(tok, j+1)
+                if j != -1 and (best is None or j < best[0]):
+                    best = (j, n)
+            if best is None: break
+            start, name = best
+            depth = 0; k = start
+            while k < len(s):
+                c = s[k]
+                if c == "(": depth += 1
+                elif c == ")":
+                    depth -= 1
+                    if depth == 0: yield name, s[start:k+1]; i = k+1; break
+                k += 1
+            else: break
+
+    for fname, fblock in iter_blocks_local(text, ["footprint"]):
+        fat = re.search(r"\(at\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)(?:\s+(-?\d+\.?\d*))?\)", fblock)
+        if not fat: continue
+        fx, fy = float(fat.group(1)), float(fat.group(2))
+        fang = float(fat.group(3)) if fat.group(3) else 0.0
+        cosA = math.cos(math.radians(fang)); sinA = math.sin(math.radians(fang))
+        for pname, pblock in iter_blocks_local(fblock, ["pad"]):
+            if "thru_hole" not in pblock and "np_thru_hole" not in pblock:
+                continue
+            pat = re.search(r"\(at\s+(-?\d+\.?\d*)\s+(-?\d+\.?\d*)", pblock)
+            dr = re.search(r"\(drill\s+(-?\d+\.?\d*)", pblock)
+            if not pat or not dr: continue
+            px, py = float(pat.group(1)), float(pat.group(2))
+            ax = fx + px*cosA - py*sinA
+            ay = fy + px*sinA + py*cosA
+            holes.append((ax, ay, float(dr.group(1)) / 2))
+    return holes
+
+
+def write_clean_dxf(pcb_path, dxf_path):
+    """Build a closed-polyline DXF directly from the .kicad_pcb's Edge.Cuts +
+    thru_hole pads. Returns (n_closed_rings, n_open_chains, holes_added).
+    """
+    import ezdxf
+    from shapely.geometry import LineString, MultiLineString, Point
+    from shapely.ops import unary_union, polygonize_full, linemerge
+
+    ls_list = parse_edge_cuts_to_linestrings(pcb_path)
+    pad_holes = parse_thru_hole_pads(pcb_path)
+
+    merged = unary_union(ls_list) if ls_list else None
+    polys = []
+    dangles_geom = None
+    cuts_geom = None
+    if merged is not None:
+        polygons, dangles_geom, cuts_geom, _invalid = polygonize_full(merged)
+        polys = list(polygons.geoms) if hasattr(polygons, "geoms") else []
+
+    # Pick the largest polygon as the plate body. Its interior rings are the
+    # cutouts on Edge.Cuts. polygonize_full ALSO returns each cutout as its own
+    # polygon — those are duplicates we skip.
+    polys.sort(key=lambda p: -p.area)
+    doc = ezdxf.new()
+    msp = doc.modelspace()
+    n_closed_rings = 0
+
+    # KiCad uses Y-down, DXF uses Y-up. Negate Y so the output is correctly
+    # oriented in fab/CAD software.
+    def flipy(coords):
+        return [(x, -y) for x, y in coords]
+
+    body = polys[0] if polys else None
+    if body is not None:
+        from shapely.geometry import Polygon as ShPolygon
+        msp.add_polyline2d(flipy(body.exterior.coords), close=True)
+        n_closed_rings += 1
+        interior_polys = []
+        for ring in body.interiors:
+            # Filter out thin-rectangle holes — these are artifacts from
+            # auto-walls closing former bridge gaps. Real cutouts (square
+            # switch cuts, round mounting holes) are roughly equilateral, so
+            # an aspect ratio >4 is a reliable signal of an auto-wall slot.
+            rp = ShPolygon(ring.coords)
+            mnx, mny, mxx, mxy = rp.bounds
+            w, h = mxx - mnx, mxy - mny
+            if w < 0.01 or h < 0.01:
+                continue
+            aspect = max(w, h) / min(w, h)
+            if aspect > 4.0:
+                continue  # skip thin rectangles (auto-wall artifacts)
+            msp.add_polyline2d(flipy(ring.coords), close=True)
+            n_closed_rings += 1
+            interior_polys.append(rp)
+        for p in polys[1:]:
+            # Skip thin-rectangle standalone polygons too
+            mnx, mny, mxx, mxy = p.bounds
+            w, h = mxx - mnx, mxy - mny
+            if w >= 0.01 and h >= 0.01:
+                if max(w, h) / min(w, h) > 4.0:
+                    continue
+            duplicate = False
+            for ip in interior_polys:
+                if abs(p.area - ip.area) < 0.01 and p.centroid.distance(ip.centroid) < 0.05:
+                    duplicate = True
+                    break
+            if duplicate:
+                continue
+            if body.contains(p.centroid):
+                continue
+            msp.add_polyline2d(flipy(p.exterior.coords), close=True)
+            n_closed_rings += 1
+
+    n_pad_holes = 0
+    for cx, cy, r in pad_holes:
+        pts = [(cx + r*math.cos(2*math.pi*i/64), -(cy + r*math.sin(2*math.pi*i/64))) for i in range(64)]
+        msp.add_polyline2d(pts, close=True)
+        n_pad_holes += 1
+        n_closed_rings += 1
+
+    open_chains = []
+    for src in (dangles_geom, cuts_geom):
+        if src is None or (hasattr(src, "is_empty") and src.is_empty): continue
+        if hasattr(src, "geoms"):
+            open_chains.extend(src.geoms)
+        else:
+            open_chains.append(src)
+    n_open = 0
+    if open_chains:
+        merged_open = linemerge(MultiLineString(open_chains)) if len(open_chains) > 1 else open_chains[0]
+        chains = list(merged_open.geoms) if hasattr(merged_open, "geoms") else [merged_open]
+        for chain in chains:
+            msp.add_polyline2d(flipy(chain.coords), close=False)
+            n_open += 1
+
+    doc.saveas(dxf_path)
+    return n_closed_rings, n_open, n_pad_holes
+
+
 def svg_dimensions_mm(svg_path):
     """Read width/height (in mm) from a kicad-cli SVG. Authoritative — kicad-cli
     excludes degenerate geometry from --fit-page-to-board, so its viewBox is the
@@ -206,16 +454,15 @@ def kicad_pcb_to_fab_zip(input_path, output_name=None, output_dir=None):
     except Exception:
         pass
 
-    # DXF via kicad-cli (mm units, single-file mode)
-    subprocess.run([
-        "kicad-cli", "pcb", "export", "dxf",
-        "--layers", "Edge.Cuts",
-        "--output-units", "mm",
-        "--mode-single",
-        "-o", dxf_path,
-        input_path,
-    ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
-    print(f"  DXF saved: {dxf_path}")
+    # DXF: build directly from .kicad_pcb's Edge.Cuts geometry + thru_hole pads.
+    # We polygonize Edge.Cuts ourselves so each closed shape becomes a single
+    # closed POLYLINE (fab auto-checks reject "open entities" otherwise).
+    closed_count, open_count, pad_count = write_clean_dxf(input_path, dxf_path)
+    print(f"  DXF saved: {dxf_path}  (closed rings: {closed_count}, "
+          f"thru_hole pads: {pad_count}, open chains: {open_count})")
+    if open_count > 0:
+        print(f"  WARNING: {open_count} open chain(s) in DXF — source has unresolvable gaps. "
+              f"Run `python3 scripts/clean_kicad_edge_cuts.py` and/or fix in KiCad.")
 
     # PDF via ezdxf + matplotlib
     try:
