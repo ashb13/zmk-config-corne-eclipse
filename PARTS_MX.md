@@ -62,7 +62,7 @@ Some vendors won't render the outside negative space of the circuitboard
 correctly in their uploader tool, but it is still fine.
 
 Provide these files to the fabricator:
-- [corne-eclipse-circuitboard.zip](/fabrication/!for-fabricator-production/corne-eclipse-circuitboard.zip)
+- [corne-eclipse-mx-dual.zip](/fabrication/!for-fabricator-production/pcb/corne-eclipse-mx-dual.zip)
 
 ### Plates
 
@@ -72,14 +72,14 @@ This will need to be cut the same way that circuitboards are. There may be an
 extra charge for adding break-away points to the plate print.
 
 Provide these files to the fabricator:
-- [corne-eclipse-plates.zip](/fabrication/!for-fabricator-production/corne-eclipse-plates.zip)
+- [corne-eclipse-plates-mx-or-chocv2-1.5mm.zip](/fabrication/!for-fabricator-production/pcb/corne-eclipse-plates-mx-or-chocv2-1.5mm.zip)
 
 ### Shield Case
 
 ![Shield](/assets/images/corne-eclipse-shield.png)
 
 Provide these files to the fabricator:
-- [corne-eclipse-shield-left.stl](/fabrication/!for-fabricator-production/corne-eclipse-shield-left.stl)
-- [corne-eclipse-shield-right.stl](/fabrication/!for-fabricator-production/corne-eclipse-shield-right.stl)
+- [corne-eclipse-case-mx-left.stl](/fabrication/!for-fabricator-production/3dprint/cases-standard/corne-eclipse-case-mx-left.stl)
+- [corne-eclipse-case-mx-right.stl](/fabrication/!for-fabricator-production/3dprint/cases-standard/corne-eclipse-case-mx-right.stl)
 
 *Note: Some fabricators have gotten pretty good at printing this out in metal.*
