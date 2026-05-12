@@ -1,3 +1,0 @@
-File: screen_cover
-Width:  19.71 mm (0.78 in)
-Height: 59.74 mm (2.35 in)

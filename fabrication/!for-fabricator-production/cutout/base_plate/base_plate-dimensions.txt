@@ -1,3 +1,0 @@
-File: base_plate
-Width:  133.73 mm (5.26 in)
-Height: 91.39 mm (3.60 in)

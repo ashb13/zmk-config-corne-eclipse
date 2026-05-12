@@ -1,3 +1,0 @@
-File: choc_switchplates
-Width:  133.12 mm (5.24 in)
-Height: 91.59 mm (3.61 in)
