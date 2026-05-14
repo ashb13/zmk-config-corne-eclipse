@@ -47,6 +47,12 @@
         zmk,underglow = &led_strip;
     };
 
+    /* nice!nano's stock EXT_POWER node uses P0.13 (its default LED pin) and
+     * collides with our /ext-power below: both normalize to the same DT
+     * symbol, leaving instance 0 with undefined config. Delete the stock
+     * node so only ours remains. */
+    /delete-node/ EXT_POWER;
+
     ext-power {
         compatible = "zmk,ext-power-generic";
         control-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; /* ProMicro pad 13 = P0.10, MOSFET gate */
