@@ -55,7 +55,7 @@
 
     ext-power {
         compatible = "zmk,ext-power-generic";
-        control-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; /* ProMicro pad 13 = P0.10, MOSFET gate */
+        control-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; /* ProMicro pad 13 = P0.09 = D10, MOSFET gate */
         init-delay-ms = <50>;
     };
 };
