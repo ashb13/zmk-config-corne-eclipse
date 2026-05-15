@@ -107,13 +107,15 @@ include:
     cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=4;-DUSE_TRACKPAD=1"
     artifact-name: right_trackpad_corne_eclipse_colemak.zmk
 
-  # Dev / RGB test - RGB enabled at boot so you can verify LED chain works
-  # before having access to RGB_TOG. QWERTY layout. Not for daily use.
+  # rgb_while_building - RGB enabled at boot, smart-idle still active so the
+  # LEDs follow the usual fade-off rules (30 s on battery, 2 h on USB).
+  # Useful during assembly to verify the LED chain works without needing
+  # access to RGB_TOG in your keymap yet. QWERTY layout. Not for daily use.
   - board: nice_nano_v2
     shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW_ON_START=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
-    artifact-name: left_corne_eclipse_dev_rgb_test.zmk
+    artifact-name: left_corne_eclipse_rgb_while_building.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW_ON_START=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
-    artifact-name: right_corne_eclipse_dev_rgb_test.zmk
+    artifact-name: right_corne_eclipse_rgb_while_building.zmk
