@@ -81,15 +81,6 @@ Inside the zip:
 
 Recommended assembly sequence: **settings_reset → rgb_while_building → confirm LEDs → settings_reset → daily layout build**. The settings reset before each flash ensures the firmware's defaults take effect instead of stale NVS state.
 
-## Development / RGB Test Build
-
-A `dev_rgb_test` build is also produced with RGB underglow enabled automatically at boot. Useful during assembly to verify the LED chain works before you've finished wiring everything up or have a working keymap with `RGB_TOG` available. QWERTY layout. Not intended for daily use.
-
-- `left_corne_eclipse_dev_rgb_test.zmk.uf2` — left half
-- `right_corne_eclipse_dev_rgb_test.zmk.uf2` — right half
-
-Recommended assembly sequence: **settings_reset → dev_rgb_test → confirm LEDs → settings_reset → daily layout build**. The settings reset before each flash ensures the firmware's defaults take effect instead of stale NVS state.
-
 ## Resetting to Factory Settings
 
 The `settings_reset-nice_nano_v2-zmk.uf2` is bundled inside every release zip. Flash it whenever you want to wipe stored settings (RGB state, BLE pairings, layer state, etc.) or as a clean-slate step before flashing new firmware.
