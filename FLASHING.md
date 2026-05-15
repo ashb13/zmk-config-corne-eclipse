@@ -50,6 +50,13 @@ Both halves should now be running the new firmware.
 
 > ⚠️ **The keyboard half must be physically connected to your computer via USB for the `NICENANO` drive to appear.** The reset switch / bootloader key only puts the half into bootloader mode — it does not expose the drive over Bluetooth. If no drive appears after a few seconds: confirm the USB cable is a data cable (not charge-only), try a different USB port, and verify the half is actually in bootloader mode.
 
+## Development / RGB Test Build
+
+A `dev_rgb_test` build is also produced with RGB underglow enabled automatically at boot. Useful during assembly to verify the LED chain works before you've finished wiring everything up or have a working keymap with `RGB_TOG` available. QWERTY layout. Not intended for daily use — flash a regular layout build once you've confirmed the LEDs work.
+
+- `left_corne_eclipse_dev_rgb_test.zmk.uf2` — left half
+- `right_corne_eclipse_dev_rgb_test.zmk.uf2` — right half
+
 ## Resetting to Factory Settings
 
 If your keyboard is misbehaving (keys not working, Bluetooth issues, etc.), you can flash the **settings reset firmware** to clear all stored settings:
