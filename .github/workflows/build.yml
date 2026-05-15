@@ -43,12 +43,20 @@ jobs:
             cp "$file" "staging/$layout/"
           done
 
-          # Zip each layout (bundling settings_reset for clean-slate flashing)
+          # Zip each layout (bundling settings_reset for clean-slate flashing).
+          # The rgb_while_building bundle uses a leading-underscore name so it
+          # sorts to the top of the release page and is visually separated
+          # from the daily-use layout zips.
           if [ -d staging ]; then
             for layout_dir in staging/*/; do
               layout=$(basename "$layout_dir")
               cp assets/references/settings_reset-nice_nano_v2-zmk.uf2 "$layout_dir"
-              zip -j "release/corne_eclipse_${layout}.zip" "$layout_dir"*
+              if [ "$layout" = "rgb_while_building" ]; then
+                zip_name="_rgb_while_building_corne_eclipse.zip"
+              else
+                zip_name="corne_eclipse_${layout}.zip"
+              fi
+              zip -j "release/${zip_name}" "$layout_dir"*
             done
           fi
 

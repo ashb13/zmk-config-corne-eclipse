@@ -67,14 +67,19 @@ Both halves should now be running the new firmware.
 
 > ⚠️ **The keyboard half must be physically connected to your computer via USB for the `NICENANO` drive to appear.** The reset switch / bootloader key only puts the half into bootloader mode; it does not expose the drive over Bluetooth. If no drive appears after a few seconds: confirm the USB cable is a data cable (not charge-only), try a different USB port, and verify the half is actually in bootloader mode.
 
-## Development / RGB Test Build
+## RGB While Building (assembly testing)
 
-A `dev_rgb_test` build is also produced with RGB underglow enabled automatically at boot. Useful during assembly to verify the LED chain works before you've finished wiring everything up or have a working keymap with `RGB_TOG` available. QWERTY layout. Not intended for daily use.
+A `_rgb_while_building_corne_eclipse.zip` bundle is also produced. Its firmware enables RGB underglow at boot so you can verify the LED chain without needing to find `RGB_TOG` in your keymap yet. Smart-idle still applies, so the LEDs follow the usual fade-off rules (30 seconds of idle on battery, 2 hours of idle on USB). QWERTY layout. Not intended for daily use.
 
-- `left_corne_eclipse_dev_rgb_test.zmk.uf2` for the left half
-- `right_corne_eclipse_dev_rgb_test.zmk.uf2` for the right half
+The leading underscore in the zip name keeps this bundle at the top of the release page, separated from the daily-use layouts.
 
-Recommended assembly sequence: **settings_reset → dev_rgb_test → confirm LEDs → settings_reset → daily layout build**. The settings reset before each flash ensures the firmware's defaults take effect instead of stale NVS state.
+Inside the zip:
+
+- `left_corne_eclipse_rgb_while_building.zmk.uf2` for the left half
+- `right_corne_eclipse_rgb_while_building.zmk.uf2` for the right half
+- `settings_reset-nice_nano_v2-zmk.uf2`
+
+Recommended assembly sequence: **settings_reset → rgb_while_building → confirm LEDs → settings_reset → daily layout build**. The settings reset before each flash ensures the firmware's defaults take effect instead of stale NVS state.
 
 ## Resetting to Factory Settings
 
