@@ -38,13 +38,14 @@ Each release ships a separate zip per typing layout × right-half hardware combi
 Once a keyboard half is in bootloader mode, it will appear as a USB drive on your computer (named **NICENANO**).
 
 1. Download the zip that matches your layout + right-half hardware from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page
-2. Extract the zip — you'll get a `left_corne_eclipse_<layout>.zmk.uf2` and a matching `right_corne_eclipse_<layout>_*.zmk.uf2`
-3. Put the **left half** into bootloader mode
-4. Drag and drop the **left** `.uf2` file onto the **NICENANO** drive
-5. The drive will disconnect automatically when flashing is complete
-6. Put the **right half** into bootloader mode
-7. Drag and drop the **right** `.uf2` file onto the **NICENANO** drive
-8. The drive will disconnect automatically when flashing is complete
+2. Extract the zip — you'll get a `left_corne_eclipse_<layout>.zmk.uf2`, a matching `right_corne_eclipse_<layout>_*.zmk.uf2`, and a `settings_reset-nice_nano_v2-zmk.uf2` for clean-slate flashing
+3. **(Recommended)** Flash `settings_reset-nice_nano_v2-zmk.uf2` to **both halves** first to wipe any saved RGB / BLE / layer state from previous firmware. Otherwise stale NVS can override the new firmware's defaults (e.g. show wrong RGB color, stuck brightness).
+4. Put the **left half** into bootloader mode
+5. Drag and drop the **left** `.uf2` file onto the **NICENANO** drive
+6. The drive will disconnect automatically when flashing is complete
+7. Put the **right half** into bootloader mode
+8. Drag and drop the **right** `.uf2` file onto the **NICENANO** drive
+9. The drive will disconnect automatically when flashing is complete
 
 Both halves should now be running the new firmware.
 
@@ -57,12 +58,12 @@ A `dev_rgb_test` build is also produced with RGB underglow enabled automatically
 - `left_corne_eclipse_dev_rgb_test.zmk.uf2` — left half
 - `right_corne_eclipse_dev_rgb_test.zmk.uf2` — right half
 
-> ℹ️ **After testing, flash the settings reset firmware before your daily firmware.** ZMK saves the "RGB on" state to NVS, so without a reset the daily build would also boot with RGB on. The recommended sequence during assembly is: dev_rgb_test → confirm LEDs → settings reset → daily layout build.
+Recommended assembly sequence: **settings_reset → dev_rgb_test → confirm LEDs → settings_reset → daily layout build**. The settings reset before each flash ensures the firmware's defaults take effect instead of stale NVS state.
 
 ## Resetting to Factory Settings
 
-If your keyboard is misbehaving (keys not working, Bluetooth issues, etc.), you can flash the **settings reset firmware** to clear all stored settings:
+The `settings_reset-nice_nano_v2-zmk.uf2` is now bundled inside every release zip — flash it whenever you want to wipe stored settings (RGB state, BLE pairings, layer state, etc.) or as a clean-slate step before flashing new firmware.
 
-1. Download `settings_reset-nice_nano_v2-zmk.uf2` from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page
-2. Flash this file to **both halves** using the steps above
+1. Extract the zip you downloaded
+2. Flash `settings_reset-nice_nano_v2-zmk.uf2` to **both halves** using the steps above
 3. After resetting both halves, flash your desired layout firmware to both halves again

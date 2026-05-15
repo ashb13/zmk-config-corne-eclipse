@@ -38,16 +38,14 @@ jobs:
             cp "$file" "staging/$layout/"
           done
 
-          # Zip each layout
+          # Zip each layout (bundling settings_reset for clean-slate flashing)
           if [ -d staging ]; then
             for layout_dir in staging/*/; do
               layout=$(basename "$layout_dir")
+              cp assets/references/settings_reset-nice_nano_v2-zmk.uf2 "$layout_dir"
               zip -j "release/corne_eclipse_${layout}.zip" "$layout_dir"*
             done
           fi
-
-          # Include reset firmware
-          cp assets/references/settings_reset-nice_nano_v2-zmk.uf2 release/
 
           echo "Release contents:"
           ls -la release/
