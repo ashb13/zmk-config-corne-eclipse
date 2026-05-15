@@ -93,3 +93,14 @@ include:
     shield: corne_eclipse_right
     cmake-args: -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=4;-DUSE_TRACKPAD_CIRQUE=1"
     artifact-name: right_corne_eclipse_colemak_cirque_trackpad_and_switch.zmk
+
+  # Dev / RGB test - RGB enabled at boot so you can verify LED chain works
+  # before having access to RGB_TOG. QWERTY layout. Not for daily use.
+  - board: nice_nano_v2
+    shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
+    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW_ON_START=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
+    artifact-name: left_corne_eclipse_dev_rgb_test.zmk
+  - board: nice_nano_v2
+    shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
+    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW_ON_START=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
+    artifact-name: right_corne_eclipse_dev_rgb_test.zmk
