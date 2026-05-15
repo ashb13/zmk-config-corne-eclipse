@@ -1,4 +1,12 @@
 ---
+# Each layout produces 4 builds:
+#   - left half default (nice!view path, studio enabled)
+#   - left half with trackpad (both Azoteq + Cirque drivers, no display)
+#   - right half default (nice!view + encoder/switch)
+#   - right half with trackpad (both Azoteq + Cirque drivers, no display,
+#     encoder/switch still enabled)
+# Plus one dev_rgb_test pair (QWERTY, RGB on at boot, no trackpad variant).
+
 include:
   # Colemak-DH
   - board: nice_nano_v2
@@ -7,16 +15,17 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: left_corne_eclipse_colemak_dh.zmk
   - board: nice_nano_v2
+    shield: corne_eclipse_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n -DDTS_EXTRA_CPPFLAGS="-DUSE_TRACKPAD=1"
+    artifact-name: left_trackpad_corne_eclipse_colemak_dh.zmk
+  - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
-    artifact-name: right_corne_eclipse_colemak_dh_encoder_or_switch.zmk
+    artifact-name: right_corne_eclipse_colemak_dh.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_ZMK_DISPLAY=n -DDTS_EXTRA_CPPFLAGS="-DUSE_TRACKPAD_AZOTEQ=1"
-    artifact-name: right_corne_eclipse_colemak_dh_azoteq_trackpad_and_switch.zmk
-  - board: nice_nano_v2
-    shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n -DDTS_EXTRA_CPPFLAGS="-DUSE_TRACKPAD_CIRQUE=1"
-    artifact-name: right_corne_eclipse_colemak_dh_cirque_trackpad_and_switch.zmk
+    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n -DDTS_EXTRA_CPPFLAGS="-DUSE_TRACKPAD=1"
+    artifact-name: right_trackpad_corne_eclipse_colemak_dh.zmk
 
   # QWERTY
   - board: nice_nano_v2
@@ -25,17 +34,18 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
     artifact-name: left_corne_eclipse_qwerty.zmk
   - board: nice_nano_v2
+    shield: corne_eclipse_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=1;-DUSE_TRACKPAD=1"
+    artifact-name: left_trackpad_corne_eclipse_qwerty.zmk
+  - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
-    artifact-name: right_corne_eclipse_qwerty_encoder_or_switch.zmk
+    artifact-name: right_corne_eclipse_qwerty.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=1;-DUSE_TRACKPAD_AZOTEQ=1"
-    artifact-name: right_corne_eclipse_qwerty_azoteq_trackpad_and_switch.zmk
-  - board: nice_nano_v2
-    shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=1;-DUSE_TRACKPAD_CIRQUE=1"
-    artifact-name: right_corne_eclipse_qwerty_cirque_trackpad_and_switch.zmk
+    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=1;-DUSE_TRACKPAD=1"
+    artifact-name: right_trackpad_corne_eclipse_qwerty.zmk
 
   # Dvorak
   - board: nice_nano_v2
@@ -44,17 +54,18 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=2"
     artifact-name: left_corne_eclipse_dvorak.zmk
   - board: nice_nano_v2
+    shield: corne_eclipse_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=2;-DUSE_TRACKPAD=1"
+    artifact-name: left_trackpad_corne_eclipse_dvorak.zmk
+  - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=2"
-    artifact-name: right_corne_eclipse_dvorak_encoder_or_switch.zmk
+    artifact-name: right_corne_eclipse_dvorak.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=2;-DUSE_TRACKPAD_AZOTEQ=1"
-    artifact-name: right_corne_eclipse_dvorak_azoteq_trackpad_and_switch.zmk
-  - board: nice_nano_v2
-    shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=2;-DUSE_TRACKPAD_CIRQUE=1"
-    artifact-name: right_corne_eclipse_dvorak_cirque_trackpad_and_switch.zmk
+    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=2;-DUSE_TRACKPAD=1"
+    artifact-name: right_trackpad_corne_eclipse_dvorak.zmk
 
   # Workman
   - board: nice_nano_v2
@@ -63,17 +74,18 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=3"
     artifact-name: left_corne_eclipse_workman.zmk
   - board: nice_nano_v2
+    shield: corne_eclipse_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=3;-DUSE_TRACKPAD=1"
+    artifact-name: left_trackpad_corne_eclipse_workman.zmk
+  - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=3"
-    artifact-name: right_corne_eclipse_workman_encoder_or_switch.zmk
+    artifact-name: right_corne_eclipse_workman.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=3;-DUSE_TRACKPAD_AZOTEQ=1"
-    artifact-name: right_corne_eclipse_workman_azoteq_trackpad_and_switch.zmk
-  - board: nice_nano_v2
-    shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=3;-DUSE_TRACKPAD_CIRQUE=1"
-    artifact-name: right_corne_eclipse_workman_cirque_trackpad_and_switch.zmk
+    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=3;-DUSE_TRACKPAD=1"
+    artifact-name: right_trackpad_corne_eclipse_workman.zmk
 
   # Colemak
   - board: nice_nano_v2
@@ -82,25 +94,28 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=4"
     artifact-name: left_corne_eclipse_colemak.zmk
   - board: nice_nano_v2
+    shield: corne_eclipse_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=4;-DUSE_TRACKPAD=1"
+    artifact-name: left_trackpad_corne_eclipse_colemak.zmk
+  - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=4"
-    artifact-name: right_corne_eclipse_colemak_encoder_or_switch.zmk
+    artifact-name: right_corne_eclipse_colemak.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=4;-DUSE_TRACKPAD_AZOTEQ=1"
-    artifact-name: right_corne_eclipse_colemak_azoteq_trackpad_and_switch.zmk
-  - board: nice_nano_v2
-    shield: corne_eclipse_right
-    cmake-args: -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=4;-DUSE_TRACKPAD_CIRQUE=1"
-    artifact-name: right_corne_eclipse_colemak_cirque_trackpad_and_switch.zmk
+    cmake-args: -DCONFIG_INPUT_AZOTEQ_IQS5XX=y -DCONFIG_INPUT_PINNACLE=y -DCONFIG_I2C=y -DCONFIG_ZMK_DISPLAY=n "-DDTS_EXTRA_CPPFLAGS=-DDEFAULT_TYPING_LAYER=4;-DUSE_TRACKPAD=1"
+    artifact-name: right_trackpad_corne_eclipse_colemak.zmk
 
-  # Dev / RGB test - RGB enabled at boot so you can verify LED chain works
-  # before having access to RGB_TOG. QWERTY layout. Not for daily use.
+  # rgb_while_building - RGB enabled at boot, smart-idle still active so the
+  # LEDs follow the usual fade-off rules (30 s on battery, 2 h on USB).
+  # Useful during assembly to verify the LED chain works without needing
+  # access to RGB_TOG in your keymap yet. QWERTY layout. Not for daily use.
   - board: nice_nano_v2
     shield: corne_eclipse_left eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW_ON_START=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
-    artifact-name: left_corne_eclipse_dev_rgb_test.zmk
+    artifact-name: left_corne_eclipse_rgb_while_building.zmk
   - board: nice_nano_v2
     shield: corne_eclipse_right eclipse_nice_view_adapter_trrs nice_view
     cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW_ON_START=y -DDTS_EXTRA_CPPFLAGS="-DDEFAULT_TYPING_LAYER=1"
-    artifact-name: right_corne_eclipse_dev_rgb_test.zmk
+    artifact-name: right_corne_eclipse_rgb_while_building.zmk
