@@ -20,3 +20,54 @@
 &left_encoder {
     status = "okay";
 };
+
+#ifdef USE_TRACKPAD
+
+/* Display is electrically incompatible with a trackpad: nice!view's SPI0
+ * uses the same P0.17/P0.20 pins that the trackpad needs for I2C. */
+&oled {
+    status = "disabled";
+};
+
+/* Both trackpad device tree nodes are defined unconditionally so a single
+ * firmware can detect whichever physical trackpad is wired. The driver
+ * whose I2C device doesn't respond fails to probe and stays silent; the
+ * one that does respond becomes active. Both expect their RDY/DR signal
+ * on pad 14 (SPI_SCK net = D16 = P0.10), so hand-wiring connects the
+ * trackpad's interrupt line to that pad. */
+&pro_micro_i2c {
+    azoteq_tp: iqs5xx@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        rdy-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>;
+        one-finger-tap;
+        two-finger-tap;
+        press-and-hold;
+        scroll;
+        flip-x;
+    };
+
+    cirque_tp: cirque_pinnacle@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>; /* 0x2c if the module's R1 jumper is bridged */
+        dr-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>;
+        sensitivity = "4x";
+    };
+};
+
+/ {
+    azoteq_listener: azoteq_listener {
+        compatible = "zmk,input-listener";
+        device = <&azoteq_tp>;
+    };
+
+    cirque_listener: cirque_listener {
+        compatible = "zmk,input-listener";
+        device = <&cirque_tp>;
+        /* Tune orientation after first flash if X/Y feel inverted:
+         * input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>;
+         */
+    };
+};
+
+#endif
