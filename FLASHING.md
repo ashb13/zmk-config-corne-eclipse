@@ -52,10 +52,12 @@ Both halves should now be running the new firmware.
 
 ## Development / RGB Test Build
 
-A `dev_rgb_test` build is also produced with RGB underglow enabled automatically at boot. Useful during assembly to verify the LED chain works before you've finished wiring everything up or have a working keymap with `RGB_TOG` available. QWERTY layout. Not intended for daily use — flash a regular layout build once you've confirmed the LEDs work.
+A `dev_rgb_test` build is also produced with RGB underglow enabled automatically at boot. Useful during assembly to verify the LED chain works before you've finished wiring everything up or have a working keymap with `RGB_TOG` available. QWERTY layout. Not intended for daily use.
 
 - `left_corne_eclipse_dev_rgb_test.zmk.uf2` — left half
 - `right_corne_eclipse_dev_rgb_test.zmk.uf2` — right half
+
+> ℹ️ **After testing, flash the settings reset firmware before your daily firmware.** ZMK saves the "RGB on" state to NVS, so without a reset the daily build would also boot with RGB on. The recommended sequence during assembly is: dev_rgb_test → confirm LEDs → settings reset → daily layout build.
 
 ## Resetting to Factory Settings
 
