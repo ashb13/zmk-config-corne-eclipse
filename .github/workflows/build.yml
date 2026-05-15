@@ -29,11 +29,16 @@ jobs:
         run: |
           mkdir -p release
 
-          # Group .uf2 files by layout
+          # Group .uf2 files by layout. Each layout ends up with both default
+          # and trackpad variants for each half plus settings_reset. Naming:
+          #   left_corne_eclipse_<layout>.zmk.uf2          (default left)
+          #   left_trackpad_corne_eclipse_<layout>.zmk.uf2 (left + trackpad)
+          #   right_corne_eclipse_<layout>.zmk.uf2          (default right)
+          #   right_trackpad_corne_eclipse_<layout>.zmk.uf2 (right + trackpad)
           for file in artifacts/firmware/*.uf2; do
             [ -f "$file" ] || continue
             basename=$(basename "$file")
-            layout=$(echo "$basename" | sed 's/^left_corne_eclipse_//;s/^right_corne_eclipse_//;s/\.zmk\.uf2$//;s/_encoder_or_switch$//;s/_trackpad_and_switch$//')
+            layout=$(echo "$basename" | sed 's/^left_trackpad_corne_eclipse_//;s/^right_trackpad_corne_eclipse_//;s/^left_corne_eclipse_//;s/^right_corne_eclipse_//;s/\.zmk\.uf2$//')
             mkdir -p "staging/$layout"
             cp "$file" "staging/$layout/"
           done

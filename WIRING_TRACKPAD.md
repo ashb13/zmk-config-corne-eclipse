@@ -1,97 +1,75 @@
 [README](README.md) | [Keymap](KEYMAP.md) | [MX Parts](PARTS_MX.md) | [Building](BUILDING.md) | [Tricks](TRICKS.md)
 
-# Wiring a Trackpad to the Right Half
+# Wiring a Trackpad
 
-The right half of the Corne Eclipse can host one of two trackpad modules:
+The Corne Eclipse can host a trackpad on either half (the PCB is reversible). The same wiring approach applies to either side; just hand-wire to the pads on the half where the trackpad is installed.
 
-- **Azoteq TPS43** (rectangular, 43×40 mm) — *EOL as of April 2024; aftermarket stock only.*
-- **Cirque Pinnacle** (GlidePoint Circle TM040040 40 mm round / TM035035 35 mm round) — actively produced, recommended for new builds.
+Two trackpad modules are supported:
 
-Both modules use the same I²C interface and the same encoder GPIO pin for their interrupt, so the wiring approach is identical apart from the module itself. In either case, a rotary encoder cannot be installed on the right half at the same time (a key switch in the encoder position is still fine).
+- **Azoteq TPS43** (rectangular, 43x40 mm). EOL as of April 2024; aftermarket stock only.
+- **Cirque Pinnacle** (GlidePoint Circle TM040040 40 mm round / TM035035 35 mm round). Actively produced, recommended for new builds.
 
-## Display Limitation (applies to both trackpads)
+Both modules use the same I2C interface and the same interrupt pin. A single trackpad firmware variant per half (`left_trackpad_corne_eclipse_<layout>.zmk.uf2` or `right_trackpad_corne_eclipse_<layout>.zmk.uf2`) bundles both drivers and auto-detects whichever module is wired up.
 
-The trackpad communicates over I²C using pins P0.17 (SDA) and P0.20 (SCL). The nice!view display uses these same physical pins for SPI. The nRF52840 cannot run both I²C and SPI on the same pins simultaneously, so **the right half cannot use a nice!view display when the trackpad is installed**. The OLED display is also disabled in the trackpad firmware to avoid conflicts.
+## What gets disabled
 
-The left half display is unaffected.
+The trackpad communicates over I2C using pins P0.17 (SDA) and P0.20 (SCL). The nice!view display on that half uses these same physical pins for SPI. The nRF52840 cannot run both I2C and SPI on the same pins simultaneously, so **the half with the trackpad cannot use a nice!view display**. The OLED display is also disabled in the trackpad firmware to avoid conflicts.
+
+The other half's display is unaffected.
+
+The encoder is **not** affected: the trackpad RDY/DR signal lives on a different pad (the SPI_SCK net = pad 14 = pro_micro D16 / P0.10) than the encoder pins, so the rotary encoder still works alongside a trackpad. A key switch in the encoder position also still works.
 
 ---
 
-## Azoteq TPS43 Wiring
+## Wiring
 
 ### Prerequisites
 
-- Azoteq TPS43-201A-B touchpad module (limited aftermarket availability — e.g. [HolyKeebs](https://holykeebs.com/products/touchpad-module))
+- A trackpad module of your choice:
+  - Azoteq TPS43-201A-B (limited aftermarket availability, e.g. [HolyKeebs](https://holykeebs.com/products/touchpad-module))
+  - Cirque GlidePoint Circle **TM040040** (40 mm) or **TM035035** (35 mm), available from [keycapsss](https://keycapsss.com/keyboard-parts/parts/211/glidepoint-cirque-trackpad-tm040040-tm035035), DigiKey, Mouser, or Cirque directly
 - 5 thin wires (28-30 AWG recommended)
 - Soldering iron and solder
-- The right encoder must **not** be installed (a key switch in that position is fine)
-- The right half nice!view display must be removed
+- The nice!view display on that half must be removed (the trackpad reuses its I2C pins)
+
+Cirque modules ship in a few form factors, most commonly a flat self-adhesive flex or an FFC ribbon. The electrical connections are the same across them; only the physical pad layout or connector differs. Match each wire below by its signal name on your specific module.
 
 ### Wiring Diagram
 
-| TPS43 Pad | nice!nano Connection | Pin | Notes |
-|-----------|---------------------|-----|-------|
-| SDA | I²C data line | P0.17 (pro_micro SDA / pad 2) | |
-| SCL | I²C clock line | P0.20 (pro_micro SCL / pad 3) | |
-| RDY | Interrupt / data ready | P1.04 (pro_micro pad 8) | Active high, directly to nice!nano |
-| VCC | 3.3 V power | 3.3 V | From nice!nano 3.3 V rail |
+| Trackpad Signal | PCB Pad / Net | nice!nano Pin | Notes |
+|---|---|---|---|
+| SDA | I2C data | P0.17 (pro_micro SDA / pad 2) | Reuses the display's SDA pad |
+| SCL | I2C clock | P0.20 (pro_micro SCL / pad 3) | Reuses the display's SCL pad |
+| RDY (Azoteq) / DR (Cirque) | **SPI_SCK net (pad 14)** | P0.10 (pro_micro D16) | Active high. Hand-wire to the pad labeled **SPI_SCK** on the PCB (silkscreen pad 14). |
+| VCC / VDD | 3.3 V | 3.3 V rail | From the nice!nano 3.3 V rail. Cirque ASIC is 3.3 V only; do not wire to 5 V. |
 | GND | Ground | GND | Any ground pad |
 
-### Connection Points
+The signal names differ slightly between modules (RDY on Azoteq, DR on Cirque) but go to the same nice!nano pin and serve the same purpose: a data-ready interrupt from the trackpad.
 
-**I²C (SDA and SCL):** Solder to the nice!nano's pro_micro SDA and SCL pads. If you previously had an OLED installed, the header pads on the PCB where the OLED connected are a convenient solder point for these lines.
+### Connection points on the PCB
 
-**RDY (Interrupt):** Solder to the nice!nano's pro_micro pin 8 pad. This is the pad normally used for the encoder's A signal. Since the encoder is not installed, this pad is free.
+**SDA and SCL:** Solder to the nice!nano's pro_micro SDA and SCL pads. The pads where the nice!view display connected on that half are a convenient solder point.
 
-**Power (VCC and GND):** Use the nice!nano's 3.3 V and GND pads.
+**RDY / DR:** Solder to the PCB pad labeled **SPI_SCK** (silkscreen pad 14). This pad normally carries the nice!view display's SPI clock signal. With the display removed and the trackpad firmware loaded, the SPI peripheral no longer uses this pad and it becomes the I2C interrupt input. The encoder pins are untouched.
+
+**Power:** Use the nice!nano's 3.3 V and GND pads on that half.
 
 ### Notes
 
-- The TPS43 I²C address is **0x74**
-- The RDY pin is **active high** — no pull-up resistor is needed
-- The TPS43 requires a **1 mm dielectric overlay** (glass or acrylic) for proper capacitive sensing. The HolyKeebs kit includes a matte grey glass overlay
-- Keep wires as short as practical to reduce I²C noise
+- Azoteq TPS43 I2C address is **0x74**; Cirque Pinnacle is **0x2A** by default. If your Cirque module has the R1 solder jumper bridged the address becomes **0x2C**, in which case you need to edit `reg = <0x2a>` to `<0x2c>` in the overlay before building from source.
+- RDY / DR is **active high**; no pull-up resistor is needed.
+- The TPS43 requires a **1 mm dielectric overlay** (glass or acrylic) for proper capacitive sensing. The HolyKeebs kit includes a matte grey glass overlay.
+- Keep wires as short as practical to reduce I2C noise.
+- Cursor direction (X/Y polarity) depends on how you mount the module relative to the keyboard. If movement feels inverted after flashing, adjust the `input-processors` line for the relevant trackpad in `config/boards/shields/corne_eclipse/corne_eclipse_<half>.overlay` and rebuild from source.
 
-### Firmware
+## Firmware
 
-Flash `right_corne_eclipse_<layout>_azoteq_trackpad_and_switch.uf2` from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page. See [FLASHING.md](FLASHING.md) for flashing instructions.
+Flash the trackpad variant for the half where the trackpad is installed. The opposite half can use either the default or trackpad variant independently (each half is flashed separately):
 
----
+- Left half with trackpad: `left_trackpad_corne_eclipse_<layout>.zmk.uf2`
+- Right half with trackpad: `right_trackpad_corne_eclipse_<layout>.zmk.uf2`
 
-## Cirque Pinnacle Wiring
-
-### Prerequisites
-
-- Cirque GlidePoint Circle trackpad module: **TM040040** (40 mm) or **TM035035** (35 mm). Available from [keycapsss](https://keycapsss.com/keyboard-parts/parts/211/glidepoint-cirque-trackpad-tm040040-tm035035), DigiKey, Mouser, or Cirque directly.
-- 5 thin wires (28-30 AWG recommended)
-- Soldering iron and solder
-- The right encoder must **not** be installed (a key switch in that position is fine)
-- The right half nice!view display must be removed
-
-Cirque modules ship in a few form factors — most commonly a flat self-adhesive flex or an FFC ribbon. The electrical connections are the same across them; only the physical pad layout / connector differs. Match each wire below by its signal name on your specific module.
-
-### Wiring Diagram
-
-| Cirque Signal | nice!nano Connection | Pin | Notes |
-|---------------|---------------------|-----|-------|
-| SDA | I²C data line | P0.17 (pro_micro SDA / pad 2) | |
-| SCL | I²C clock line | P0.20 (pro_micro SCL / pad 3) | |
-| DR (Data Ready) | Interrupt | P1.04 (pro_micro pad 8) | Active high |
-| VDD | 3.3 V power | 3.3 V | From nice!nano 3.3 V rail |
-| GND | Ground | GND | Any ground pad |
-
-### Notes
-
-- The Cirque Pinnacle I²C address is **0x2A** by default. If your module has the R1 solder jumper bridged the address becomes **0x2C** — in that case the overlay needs `reg = <0x2c>` instead of `<0x2a>`.
-- DR is **active high**, matching the TPS43 — no pull-up needed.
-- The Cirque ASIC is **3.3 V** only. Do not wire VDD to the 5 V rail.
-- Cursor direction (X/Y polarity) depends on how you mount the module relative to the keyboard. If movement feels inverted after flashing, adjust the `input-processors` line in `config/boards/shields/corne_eclipse/corne_eclipse_right.overlay`.
-
-### Firmware
-
-Flash `right_corne_eclipse_<layout>_cirque_trackpad_and_switch.uf2` from the [releases](https://github.com/Frosthaven/zmk-config-corne-eclipse/releases) page. See [FLASHING.md](FLASHING.md) for flashing instructions.
-
----
+Both variants bundle the Azoteq IQS5xx and Cirque Pinnacle drivers, so a single firmware works for either module type. See [FLASHING.md](FLASHING.md) for flashing instructions.
 
 ## Trackpad Features
 
