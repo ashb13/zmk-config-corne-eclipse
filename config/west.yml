@@ -17,10 +17,10 @@ manifest:
       import: app/west.yml
     - name: zmk-ext-power-smart-idle
       remote: frosthaven
-      # Pinned to last known-good commit. Newer commits in main introduced
-      # DT_NODELABEL -> DT_COMPAT lookup change and boot-grace flag that
-      # break on-battery auto-off and cause red instead of blue RGB.
-      revision: 6511488dc58dbbcf9add0b691b1e81e130d7a3fe
+      # Pinned to b558980 = 6511488 + clean USB-idle-timeout feature. The
+      # commits between dropped DT_NODELABEL/DT_COMPAT change and boot-grace
+      # flag that broke on-battery auto-off and caused wrong RGB color.
+      revision: b558980
     - name: zmk-driver-azoteq-iqs5xx
       remote: aym1607
       revision: main
