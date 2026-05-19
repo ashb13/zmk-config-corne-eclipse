@@ -88,7 +88,7 @@ Then paste the following URL into your browser address bar to import the
 Omni-shortcuts:
 
 ```
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Frosthaven/zmk-config-corne-eclipse/main/assets/references/karabiner-windows-shortcuts.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/ashb13/zmk-config-corne-eclipse/main/assets/references/karabiner-windows-shortcuts.json
 ```
 
 *Note: Make sure that Corne Eclipse has both `Modify events` and `Ignore vendor
@@ -123,6 +123,23 @@ Three rule groups — **Text Navigation**, **Text Editing**, and **App Shortcuts
 | `Ctrl+D` | Bookmark / select next occurrence |
 | `Ctrl+B` | Bold / toggle sidebar |
 | `Ctrl+I` | Italic |
+
+</details>
+
+<details>
+<summary>Tap Command alone → launch Raycast</summary>
+
+
+A modifier-tap rule turns the Command key into a [Raycast](https://www.raycast.com/) launcher when tapped on its own: hold Command and it behaves normally for shortcuts (e.g. `Cmd+S`), tap and release it alone and it fires `Control+Space` (Raycast's default global hotkey). Released using Karabiner's `to_if_alone` with `lazy: true`, so holding Command never registers as a key event until another key joins it — there's no menu flash or stray modifier press.
+
+Bundled into the same `karabiner-windows-shortcuts.json` import URL as the omni-shortcuts above. The rule shows up in Karabiner as a separate enable/disable toggle, so you can leave it off if you'd rather not lose tap-Command.
+
+| Key | Action |
+|-----|--------|
+| Tap `Cmd` (no other key) | Launch / toggle Raycast |
+| Hold `Cmd` + any key | Normal Command behavior |
+
+*Note: requires Raycast's global hotkey to be set to `Control+Space` (the default). If you've changed it, update the `to_if_alone` binding in the rule to match.*
 
 </details>
 
