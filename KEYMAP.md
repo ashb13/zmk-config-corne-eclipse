@@ -88,7 +88,7 @@ Then paste the following URL into your browser address bar to import the
 Omni-shortcuts:
 
 ```
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Frosthaven/zmk-config-corne-eclipse/main/assets/references/karabiner-windows-shortcuts.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/ashb13/zmk-config-corne-eclipse/v3-choc-mx/assets/references/karabiner-windows-shortcuts.json
 ```
 
 *Note: Make sure that Corne Eclipse has both `Modify events` and `Ignore vendor
