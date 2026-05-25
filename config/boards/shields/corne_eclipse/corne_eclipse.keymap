@@ -57,13 +57,13 @@
     scroll_vertical: scroll_vertical {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+      bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
       tap-ms = <100>;
     };
     scroll_horizontal: scroll_horizontal {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&msc MOVE_X(-75)>, <&msc MOVE_X(75)>;
+      bindings = <&msc MOVE_X(75)>, <&msc MOVE_X(-75)>;
       tap-ms = <100>;
     };
     // Right encoder zoom: each detent emits Ctrl + scroll, the de-facto
@@ -75,7 +75,7 @@
     zoom_encoder: zoom_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&zoom_out>, <&zoom_in>;
+      bindings = <&zoom_in>, <&zoom_out>;
       tap-ms = <100>;
     };
   };
@@ -172,7 +172,7 @@
                                                   &kp C_MUTE        &kp LALT          &mo 5             &kp SPACE         &kp RET           &mo 6             &kp LGUI          &kp C_PLAY_PAUSE
         >;
 #endif
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_V>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_V>;
       };
 
 /* LAYER 1 — QWERTY (or COL-DH if QWERTY was promoted) **********************/
@@ -195,7 +195,7 @@
                                                   &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
         >;
 #endif
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_V>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_V>;
       };
 
 /* LAYER 2 — DVORAK (or COL-DH if DVORAK was promoted) **********************/
@@ -218,7 +218,7 @@
                                                   &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
         >;
 #endif
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_V>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_V>;
       };
 
 /* LAYER 3 — WORKMAN (or COL-DH if WORKMAN was promoted) *********************/
@@ -241,7 +241,7 @@
                                                   &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
         >;
 #endif
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_V>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_V>;
       };
 
 /* LAYER 4 — COLEMAK (or COL-DH if COLEMAK was promoted) ********************/
@@ -264,7 +264,7 @@
                                                   &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
         >;
 #endif
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_V>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_V>;
       };
 
       lower_layer {
@@ -275,7 +275,7 @@
           &kp LSHFT             &rgb_ug RGB_SPI   &mkp MCLK         &rgb_ug RGB_SPD   &rgb_ug RGB_HUI   &rgb_ug RGB_EFF   &kp UNDER         &kp RPAR          &kp RBRC          &kp RBKT          &kp BACKSLASH         &kp TILDE
                                                   &trans            &macro_emoji      &trans            &trans            &trans            &mo 7             &trans            &trans
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_H>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_H>;
       };
 
       raise_layer {
@@ -286,7 +286,7 @@
           &kp LSHFT             &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT        &none             &kp K_APP         &kp KP_NUMLOCK    &kp N1            &kp N2            &kp N3            &kp PERCENT            &kp EQUAL
                                                   &trans            &trans            &mo 7             &trans            &kp KP_ENTER      &trans            &kp N0            &trans
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_H>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_H>;
       };
 
       adjust_layer {
@@ -297,7 +297,7 @@
           &sys_reset            &kp F11           &kp F12           &kp F16           &kp F17           &kp F18           &to 0             &to 1             &to 2             &to 3             &to 4                 &sys_reset
                                                   &trans            &kp LALT          &trans            &trans            &trans            &trans            &kp LGUI          &trans
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN RIGHT_ENC_H>;
+        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP RIGHT_ENC_H>;
       };
     };
 };
